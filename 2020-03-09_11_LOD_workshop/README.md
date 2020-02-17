@@ -1,13 +1,7 @@
 Workhop: ''How to Design, Manage and Publish Ontologies on the Semantic Web: A Guide for the Digital Humanist''
 
-Malcanton Marcorà, 2° piano, sala Piccola
-
-3 day workshop: 9th-11th March 2020
-
-Instructors: Anas Fahad Khan and Andrea Bellandi (Istituto di Linguistica Computazionale -CNR-ILC) with a keynote by Monica Monachini (CNR-ILC), the national coordinator of CLARIN-IT 
-
-Info: <https://www.unive.it/data/33113/2/37330>
-
-Organizers: Federico Boschetti, Tiziana Mancinelli, Paolo Monella
-
-Workshop materials will be published on a dedicated GitHub website that will be announced to participants via email.
+- 3 day workshop: 9th-11th March 2020
+- Instructors: Anas Fahad Khan and Andrea Bellandi (Istituto di Linguistica Computazionale -CNR-ILC) with a keynote by Monica Monachini (CNR-ILC), the national coordinator of CLARIN-IT 
+- Place: Malcanton Marcorà, 2° piano, sala Piccola
+- Info: <https://www.unive.it/data/33113/2/37330>
+- Organizers: Federico Boschetti, Tiziana Mancinelli, Paolo Monella
