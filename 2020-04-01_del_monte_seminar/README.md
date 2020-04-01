@@ -1,10 +1,4 @@
-# Seminar information
-
-Rodolfo Del Monte, "Poetry and computer speech -Analysing and Reading Elizabethan and modern poets with SPARSAR", Wed. 1 April 2020, 17:00 (GMT+1, Italian time) on Google Meet
-
-# Materials
-
-- Slides: https://github.com/vedph/event_materials
-- 
-
-in github.com/vedph/event_ma…. SPARSAR website: sparsar.wordpress.com Video will be in the #VeDPH YouTube channel youtube.com/channel/UCpVTd… in a few days
+- Seminar information: Rodolfo Del Monte, "Poetry and computer speech -Analysing and Reading Elizabethan and modern poets with SPARSAR", Wed. 1 April 2020, 17:00 (GMT+1, Italian time) on Google Meet
+- Slides: https://github.com/vedph/event_materials/tree/master/2020-04-01_del_monte_seminar
+- SPARSAR website: https://sparsar.wordpress.com/
+- Video recording in the VeDPH YouTube channel: https://www.youtube.com/channel/UCpVTd9npww6UwFQti5yu4NQ
