@@ -4,3 +4,4 @@ Sara Tonelli (Fondazione Bruno Kessler - Trento): "Building tools and datasets t
 - Online, on Meet
 - Slides: see file `SARA-venezia-FBK.pdf` in this folder
 - Video recording will be published in the [VeDPH Youtube channel](https://www.youtube.com/channel/UCpVTd9npww6UwFQti5yu4NQ) a few days after the seminar
+- Details and abstract: <https://www.unive.it/data/33113/2/38557>
