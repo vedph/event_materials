@@ -1,4 +1,4 @@
-Sara Tonelli (Fondazione Bruno Kessler - Trent): "Building tools and datasets to detect online hate speech: current studies on cyberbullying and islamophobia"
+Sara Tonelli (Fondazione Bruno Kessler - Trento): "Building tools and datasets to detect online hate speech: current studies on cyberbullying and islamophobia"
 
 - 8 April 2020, 17:00 GMT+1 (Italian time)
 - Online, on Meet
