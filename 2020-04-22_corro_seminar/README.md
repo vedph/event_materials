@@ -8,4 +8,4 @@ Elisa Corrò (Visiting Scholar, VeDPH): "Water Matters. Digital solutions for a 
 - Organizers:
     - [Venice Centre for Digital and Public Humanities (VeDPH)](https://www.unive.it/vedph)
     - [Research Institute for Digital and Cultural Heritage e Humanities & Social Change]<https://hscif.org/events/?location=&what=future>
-- Programme of the [Spring VeDPH Seminars in Digital and Public Humanities](https://www.unive.it/data/agenda/2/39042)
+- [VeDPH Seminars in Digital and Public Humanities](https://www.unive.it/data/agenda/2/39042)
