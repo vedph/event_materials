@@ -1,4 +1,4 @@
-Elisa Corrò (Visiting Professor, VeDPH): "Water Matters. Digital solutions for a better understanding of past extreme events"
+Elisa Corrò (Visiting Scholar, VeDPH): "Water Matters. Digital solutions for a better understanding of past extreme events"
 
 - 22 April 2020, 17:00 GMT+1 (Italian time)
 - Online, on Google Meet
