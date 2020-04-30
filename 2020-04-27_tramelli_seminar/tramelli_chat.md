@@ -38,7 +38,7 @@ JD: At the Plantin-Moretus Museum, we are digitizing and describing the entire c
 RB: A quick question as I came in late - I saw Paolo Monella's tweets about image similarity searching in this presentation and was wondering if this was using an open source implementation and if so is there a link to the code being used?
 
 00:50:24.372,00:50:27.372
-GB: Hi Ryan - it's not so much similarity search as ImageMatching, and the tool (which is free and open source) is available here - https://www.robots.ox.ac.uk/~vgg/software/vise/. Message me for more details.
+GB: Hi R. - it's not so much similarity search as ImageMatching, and the tool (which is free and open source) is available here - https://www.robots.ox.ac.uk/~vgg/software/vise/. Message me for more details.
 
 00:52:40.698,00:52:43.698
 GB: +1 to the idea of transfer learning from the matched blocks. Great idea!
