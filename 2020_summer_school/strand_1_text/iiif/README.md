@@ -32,7 +32,7 @@ https://docs.google.com/document/d/1WHQjPqfgKmJZfSQmdmAZ6RW_CNUNbC6ic22zvHMsGsM/
 Manifest:
 https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json
 
-Un info.json di canvas:
+info.json for a canvas:
 https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json
 
 JSON image description:
