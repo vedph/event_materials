@@ -131,12 +131,14 @@ Text 1: Strand
     4. Linking \<lb/\> to an image *region* (first line of the rubric, *Ci commence li livres du Grant Caam*):
 
             <lb n="13r.1" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/500,3550,3000,140/full/0/default"/>
+
+## Images for size and crop
                         
-Image 1: [size.png](size.png)
+### Image 1: [size.png](size.png)
 
 ![](size.png?raw=true)
 
-Image 2: [crop.png](crop.png)
+### Image 2: [crop.png](crop.png)
 
 ![](crop.png?raw=true)
 
