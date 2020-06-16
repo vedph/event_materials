@@ -38,58 +38,58 @@ Text 1: Strand
     1. [File GDoc summer
         school](https://docs.google.com/document/d/1WHQjPqfgKmJZfSQmdmAZ6RW_CNUNbC6ic22zvHMsGsM/edit#heading=h.ws30n8ta6qdo)
     2. *Manifest*:
-        <https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json>
+        https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json
         (`sequences/0/canvases/26/@id` points to:)
     3. *Canvas*:
         [https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json
         (`images/0/resource/@id` points
         to:)](https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json)
     4. *Image*:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/info.json>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/info.json
 0. Let\'s manipulate an image with the IIIF Image API: full image
     1. Full image (middle-low resolution):
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default
     2. Same as above, with file extension at the end (.jpg):
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jp2>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jp2
     3. Same as above, with file extension at the end (.jpg):
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg
     4. Same as above, with file extension before (.jp2):
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3.jp2/full/full/0/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3.jp2/full/full/0/default
 0. IIIF Image API: resizing (size)
     1. Width 200 px:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/200,/0/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/200,/0/default
     2. Height 200 px:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/,200/0/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/,200/0/default
     3. Squeeze to 50 (width) x 600 (heigth):
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/50,600/0/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/50,600/0/default
     4. [Further details](https://iiif.io/api/image/2.1/#size) from the
         API documentation
 0. IIIF Image API: cropping (region)
     1. Illuminated initial:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/200,200,1200,1600/full/0/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/200,200,1200,1600/full/0/default
     2. First line:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default
     3. [Further details](https://iiif.io/api/image/2.1/#region) from
         the API documentation
 0. IIIF Image API: quality
     1. Default:
         [http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default](https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default)
     1. Color (same as 'default')
-        <http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/color>
+        http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/color
     2. Gray
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/gray>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/gray
     3. Bitonal (black and white)
-        <http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/bitonal>
+        http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/bitonal
 0. IIIF Image API: rotation
     1. Rotate 90°:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/90/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/90/default
     2. Rotation is allowed only for multiples of 90° in this IIIF
         server, so 45° returns an error:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/45/default>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/45/default
     3. Mirroring:
-        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/!0/color>
+        https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/!0/color
 0. Gallica Manuscript (not used in this workshop):
-    <https://gallica.bnf.fr/ark:/12148/btv1b52000858n/f152.item.zoom>
+        https://gallica.bnf.fr/ark:/12148/btv1b52000858n/f152.item.zoom
 0. Let\'s link our digital edition to a *local* image (from within TEI)
     1. Download image [D23sup.jpg](img/D23sup.jpg)
     .  Write this in your TEI code:
@@ -200,11 +200,11 @@ Text 1: Strand
     XML. Un'efficace "disseminazione" dei contenuti digitalizzati*,
     C.R.E.L.E.B.- Università Cattolica, Milano, Edizioni CUSL, Milano
     2014 (Minima Bibliographica, 19), ISBN: 978-88-8132-7058
-    <https://centridiricerca.unicatt.it/creleb-Cusimano.pdf>.
+    https://centridiricerca.unicatt.it/creleb-Cusimano.pdf
 - L. Magnuson, *Store and display high resolution images with the
     International Image Interoperability Framework (IIIF)*,
     in «ACRL TechConnect Blog», February 25, 2016,
-    <https://acrl.ala.org/techconnect/post/store-and-display-high-resolution-images-with-the-international-image-interoperability-framework-iiif/>
+    https://acrl.ala.org/techconnect/post/store-and-display-high-resolution-images-with-the-international-image-interoperability-framework-iiif/
 - A. Salarelli, *International Image Interoperability Framework
     (IIIF): una panoramica*, in «JLIS.it», 8, 1
     (January 2017), pp. 50-66, DOI:
