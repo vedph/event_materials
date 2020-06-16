@@ -118,20 +118,19 @@ Text 1: Strand
 0. Let\'s link our digital edition to an *IIIF* image:
     1. Linking (from within TEI) \<pb/\> to a whole IIIF JSON manifest:
 
-            <pb n="13r" facs="http://213.21.172.53/manifests/public/0b002711800e7d6d.json"/>
+            <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json"/>
 
-    2. Linking \<pb/\> to a specific canvas (folio) within the IIIF
-        JSON manifest:
+    2. Linking \<pb/\> to a specific canvas `info.json':
 
-            <pb n="13r" facs="http://213.21.172.53/manifests/public/0b002711800e7d6d.json#/sequences/0/canvases/35"/>
+            <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/canvas/699adfb3-a5da-4b09-9759-41eee3713bc3.json"/>
                         
     3. Linking \<pb/\> to an image *file*:
 
             <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/full/0/default.jpg"/>
                         
-    4. Linking \<lb/\> to an image *region* (fist line):
+    4. Linking \<lb/\> to an image *region* (first line of the rubric, *Ci commence li livres du Grant Caam*):
 
-            <lb n="13r.1" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/default"/>
+            <lb n="13r.1" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/500,3550,3000,140/full/0/default"/>
                         
 Image 1: [size.png](size.png)
 
