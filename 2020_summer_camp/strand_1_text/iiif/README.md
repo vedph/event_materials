@@ -61,7 +61,7 @@ Text 1: Strand
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/,200/0/default
     3. Squeeze to 50 (width) x 600 (heigth):
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/50,600/0/default
-    4. See image [size.png](size.png) from this repository
+       (see image [size.png](size.png) from this repository)
     5. [Further details](https://iiif.io/api/image/2.1/#size) from the
         API documentation
 0. IIIF Image API: cropping (region)
@@ -140,6 +140,8 @@ Image 1: [size.png](size.png)
 Image 2: [crop.png](crop.png)
 
 ![](crop.png?raw=true)
+
+
 
 ## Useful links
 
