@@ -104,7 +104,7 @@ Text 1: Strand
     3. Right: Convert to → xHTML
     4. Left: Select file to convert → Button *Browse*/*Sfoglia* →
         select and upload your TEI XML file (`mytrascription.xml`)
-    5. Right: Upload images → → Button *Browse*/*Sfoglia* → select and
+    5. Right: Upload images → Button *Browse*/*Sfoglia* → select and
         upload the image with the manuscript page facsimile
     6. Bottom, center: click on button *Convert*
     7. In a few seconds, a download dialog window appears → click
@@ -121,12 +121,10 @@ Text 1: Strand
 
             <pb n="13r" facs="http://213.21.172.53/manifests/public/0b002711800e7d6d.json#/sequences/0/canvases/35"/>
                         
-
     3. Linking \<pb/\> to an image *file*:
 
             <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg"/>
                         
-
     4. Linking \<lb/\> to an image *region* (fist line):
 
             <lb n="13r.1" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default"/>
@@ -138,13 +136,13 @@ Text 1: Strand
 
 - [Oxygen XML Editor](https://www.oxygenxml.com): [professional,
     standard in TEI community, paid (with trial period), complete until
-    HTML transformation]{lang="en"}
+    HTML transformation]
 - [XML Copy
     Editor](https://sourceforge.net/projects/xml-copy-editor/): [open
-    source, free, installation]{lang="en"}
+    source, free, installation]
 - [Online XML
     Editor](https://www.tutorialspoint.com/online_xml_editor.htm): [for
-    this workshop only, no installation]{lang="en"}
+    this workshop only, no installation]
 
 ### Tools to process TEI XML for visualization
 
@@ -155,9 +153,9 @@ Text 1: Strand
 - [TEI Critical Apparatus Toolbox](http://teicat.huma-num.fr/)
     - [Display parallel
         versions](http://teicat.huma-num.fr/witnesses.php): [synoptic
-        visualization of textual variants]{lang="en"}
+        visualization of textual variants]
     - [Check your encoding](http://teicat.huma-num.fr/check.php):
-        [simple visualization]{lang="en"}
+        [simple visualization]
 
 ### Guidelines, specifications and help
 
@@ -168,8 +166,6 @@ Text 1: Strand
         online](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html))
     - [TEI-L mailing list](https://tei-c.org/support/#tei-l)
 - [IIIF official website](https://iiif.io/)
-- Drop us an email: fcusimano at ambrosiana.it and
-    ![Contact](../indice/immagini/scansione.gif){.inlinea}
 
 ### JSON and IIIF resources
 
@@ -190,34 +186,26 @@ Text 1: Strand
 
 # Suggested readings
 
-### DH and TEI XML {#dh-and-tei-xml lang="en"}
+### DH and TEI XML 
 
-- Orlandi, T. (2010), [Informatica testuale]{.tit lang="en it"}.
-    Teoria e prassi, Laterza, Roma.
-- Pierazzo, E. (2015), [Digital Scholarly Editing: Theories, Models
-    and Methods]{.tit lang="en it"}, Ashgate, Farnham (Surrey, UK) and
-    Burlington (VT, USA),
-    <https://hal.archives-ouvertes.fr/hal-01182162/document>
-- Stella, F. (2018), [Testi letterari e analisi digitale]{.tit
-    lang="en it"}, Carocci.
+- Orlandi, T. (2010), *Informatica testuale. Teoria e prassi*, Laterza, Roma.
+- Pierazzo, E. (2015), *Digital Scholarly Editing: Theories, Models and Methods*,
+    Ashgate, Farnham (Surrey, UK) and Burlington (VT, USA),
+    https://hal.archives-ouvertes.fr/hal-01182162/document
+- Stella, F. (2018), *Testi letterari e analisi digitale*, Carocci.
 
-### IIIF {#iiif lang="en it"}
+### IIIF 
 
-- F. Cusimano, Due esempi di "buone pratiche" nell'uso dei metadati
-    XML. Un'efficace "disseminazione" dei contenuti digitalizzati,
+- F. Cusimano, *Due esempi di "buone pratiche" nell'uso dei metadati
+    XML. Un'efficace "disseminazione" dei contenuti digitalizzati*,
     C.R.E.L.E.B.- Università Cattolica, Milano, Edizioni CUSL, Milano
     2014 (Minima Bibliographica, 19), ISBN: 978-88-8132-7058
     <https://centridiricerca.unicatt.it/creleb-Cusimano.pdf>.
-- L. Magnuson, [Store and display high resolution images with the
-    International Image Interoperability Framework (IIIF)]{.tit
-    lang="en it"}, in «ACRL TechConnect Blog», February 25, 2016,
+- L. Magnuson, *Store and display high resolution images with the
+    International Image Interoperability Framework (IIIF)*,
+    in «ACRL TechConnect Blog», February 25, 2016,
     <https://acrl.ala.org/techconnect/post/store-and-display-high-resolution-images-with-the-international-image-interoperability-framework-iiif/>
-- A. Salarelli, [International Image Interoperability Framework
-    (IIIF): una panoramica]{.tit lang="en it"}, in «JLIS.it», 8, 1
+- A. Salarelli, *International Image Interoperability Framework
+    (IIIF): una panoramica*, in «JLIS.it», 8, 1
     (January 2017), pp. 50-66, DOI:
-    <http://dx.doi.org/10.4403/jlis.it-12090>
-- F. Cusimano, [Biblioteche di conservazione & Data Curation: dal
-    Custos catalogi al Digital Librarian. Il caso della Veneranda
-    Biblioteca Ambrosiana]{.tit lang="en it"}, in «JLIS.it», 10, 1
-    (January 2019), pp. 125−139. DOI:
-    <http://dx.doi.org/10.4403/jlis.it-12513>
+    http://dx.doi.org/10.4403/jlis.it-12090
