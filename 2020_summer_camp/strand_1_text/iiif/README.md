@@ -21,11 +21,11 @@ Text 1: Strand
 
 0. [Framasoft shared pad](#)
 0. Other learning materials
-    1. [Paolo Monella Bologna
+    a. [Paolo Monella Bologna
         2020](https://www1.unipa.it/paolo.monella/reires2019/index.html)
-    2. [Paolo Monella and Roberto Rosselli Del Turco AIUCD
+    b. [Paolo Monella and Roberto Rosselli Del Turco AIUCD
         2020](https://www1.unipa.it/paolo.monella/aiucd2020/index.html)
-    3. [Tiziana Mancinelli Bologna
+    c. [Tiziana Mancinelli Bologna
         2020](https://slides.com/tizmancinelli/documenta-amoris#/)
 0. Documentation
     0. [IIIF Presentation API
