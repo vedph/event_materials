@@ -57,27 +57,28 @@ Text 1: Strand
 
 0. OLD/NEW
     1. OLD canvas: b923ae49-638f-4d8d-99a4-71def3bf7bc3
-    1. NEW canvas: ccf86bd5-62ac-4634-8b5f-8474ad04cbbb
+    1. NEW canvas: 699adfb3-a5da-4b09-9759-41eee3713bc3
+    https://iiif.bodleian.ox.ac.uk/iiif/canvas/699adfb3-a5da-4b09-9759-41eee3713bc3.json"
 0. What\'s under the hood? IIIF JSON metadata files (manifest.json and
     info.json)
     1. *Manifest*:
         https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json
         (`sequences/0/canvases/26/@id` points to:)
     2. *Canvas*:
-        https://iiif.bodleian.ox.ac.uk/iiif/canvas/ccf86bd5-62ac-4634-8b5f-8474ad04cbbb.json
+        https://iiif.bodleian.ox.ac.uk/iiif/canvas/699adfb3-a5da-4b09-9759-41eee3713bc3.json
         (`images/0/resource/@id` points
         to:)
     3. *Image*:
-        https://iiif.bodleian.ox.ac.uk/iiif/image/ccf86bd5-62ac-4634-8b5f-8474ad04cbbb/info.json
+        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3.json
 0. Let\'s manipulate an image with the IIIF Image API: full image
     1. Full image (middle-low resolution):
-        https://iiif.bodleian.ox.ac.uk/iiif/image/ccf86bd5-62ac-4634-8b5f-8474ad04cbbb/full/full/0/default
+        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/full/0/default
     2. Same as above, with file extension at the end (.jpg):
-        https://iiif.bodleian.ox.ac.uk/iiif/image/ccf86bd5-62ac-4634-8b5f-8474ad04cbbb/full/full/0/default.jp2
+        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/full/0/default.jp2
     3. Same as above, with file extension at the end (.jpg):
-        https://iiif.bodleian.ox.ac.uk/iiif/image/ccf86bd5-62ac-4634-8b5f-8474ad04cbbb/full/full/0/default.jpg
+        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/full/0/default.jpg
     4. Same as above, with file extension before (.jp2):
-        https://iiif.bodleian.ox.ac.uk/iiif/image/ccf86bd5-62ac-4634-8b5f-8474ad04cbbb/full/full/0/default
+        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/full/0/default
 
 ## OLD AGAIN
 
