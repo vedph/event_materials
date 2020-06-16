@@ -1,90 +1,243 @@
-# IIIF lesson
+::: {role="main"}
+[VeDPH Summer Camp 2020]{.h1_sec lang="en it"} Linking Text and image: TEI XML and IIIF [Paolo Monella]{.h1_sec} {#vedph-summer-camp-2020-linking-text-and-image-tei-xml-and-iiif-paolo-monella lang="en it"}
+================================================================================================================
 
+![[IIIF
+logo](https://commons.wikimedia.org/wiki/File:International_Image_Interoperability_Framework_logo.png)](img/International_Image_Interoperability_Framework_logo.png)
 
-## Pre-existing teaching materials
+::: {#plan .section}
+Plan {#plan lang="en"}
+----
 
-Paolo Monella Bologna 2020:
-https://www1.unipa.it/paolo.monella/reires2019/index.html
+  Lecture (open)   Workshop (restricted)   Topic/activity
+  ---------------- ----------------------- ------------------
+  15.00-15.05                              What is IIIF and what it is for
+  15.05-15.10                              Let\'s view a manuscript with IIIF
+  15.10-15.15      15.45-15.55             What\'s under the hood? IIIF JSON metadata files (manifest.json and info.json)
+  15.15-15.20      15.55-16.05             Let\'s manipulate an image with the IIIF Image API (resizing, cropping, rotating)
+  15.20-15.25      16.05-16.15             Let\'s link our digital edition to a local image
+  15.25-15.30      16.15-16.30             \...and to an IIIF image: \<pb/\> to a IIIF canvas, \<lb/\> to a cropped region
+:::
 
-Paolo Monella and Roberto Rosselli Del Turco AIUCD 2020:
-https://www1.unipa.it/paolo.monella/aiucd2020/index.html
+::: {#materials .section}
+Materials and instructions {#materials-and-instructions lang="en"}
+--------------------------
 
-Slides Tiziana Mancinelli Bologna 2020:
-https://slides.com/tizmancinelli/documenta-amoris#/
+1.  [Framasoft shared pad](#)
+2.  Other learning materials
+    1.  [Paolo Monella Bologna
+        2020](https://www1.unipa.it/paolo.monella/reires2019/index.html)
+    2.  [Paolo Monella and Roberto Rosselli Del Turco AIUCD
+        2020](https://www1.unipa.it/paolo.monella/aiucd2020/index.html)
+    3.  [Tiziana Mancinelli Bologna
+        2020](https://slides.com/tizmancinelli/documenta-amoris#/)
+3.  Documentation
+    1.  [IIIF Presentation API
+        documentation](https://iiif.io/api/presentation/2.1/)
+        (manifest.json)
+    2.  [IIIF Image API documentation](https://iiif.io/api/image/2.1/)
+        (info.json)
+4.  What\'s under the hood? IIIF JSON metadata files (manifest.json and
+    info.json)
+    1.  [File GDoc summer
+        school](https://docs.google.com/document/d/1WHQjPqfgKmJZfSQmdmAZ6RW_CNUNbC6ic22zvHMsGsM/edit#heading=h.ws30n8ta6qdo)
+    2.  *Manifest*:
+        <https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json>
+        (`sequences/0/canvases/26/@id` points to:)
+    3.  *Canvas*:
+        [https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json
+        (`images/0/resource/@id` points
+        to:)](https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json)
+    4.  *Image*:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/info.json>
+5.  Let\'s manipulate an image with the IIIF Image API: full image
+    1.  Full image (middle-low resolution):
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default>
+    2.  Same as above, with file extension at the end (.jpg)
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jp2>
+    3.  Same as above, with file extension at the end (.jpg)
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg>
+    4.  Same as above, with file extension before (.jp2):
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3.jp2/full/full/0/default>
+6.  IIIF Image API: resizing (size)
+    1.  Width 200 px:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/200,/0/default>
+    2.  Height 200 px:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/,200/0/default>
+    3.  Squeeze to 50 (width) x 600 (heigth):
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/50,600/0/default>
+    4.  [Further details](https://iiif.io/api/image/2.1/#size) from the
+        API documentation
+7.  IIIF Image API: cropping (region)
+    1.  Illuminated initial:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/200,200,1200,1600/full/0/default>
+    2.  First line:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default>
+    3.  [Further details](https://iiif.io/api/image/2.1/#region) from
+        the API documentation
+8.  IIIF Image API: quality
+    1.  Default:
+        [http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default](https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default)
+    2.  Color (same as 'default')
+        <http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/color>
+    3.  Gray
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/gray>
+    4.  Bitonal (black and white)
+        <http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/bitonal>
+9.  IIIF Image API: rotation
+    1.  Rotate 90°:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/90/default>
+    2.  Rotation is allowed only for multiples of 90° in this IIIF
+        server, so 45° returns an error:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/45/default>
+    3.  Mirroring:
+        <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/!0/color>
+10. Gallica Manuscript (not used in this workshop):
+    <https://gallica.bnf.fr/ark:/12148/btv1b52000858n/f152.item.zoom>
+11. Let\'s link our digital edition to a *local* image (from within TEI)
+    1.  Download image [D23sup.jpg](img/D23sup.jpg)
+    2.  Write this in your TEI code:
 
-## Documentation
+            <pb n="D23sup" facs="D23sup.jpg"/>
 
-IIIF Image API documentation:
-https://iiif.io/api/image/2.1/
+12. Let\'s visualize our edition linked to a *local* image (we use
+    [OxGarage](https://oxgarage.tei-c.org/#) to convert TEI XML to
+    HTML). Instructions:
+    1.  Go to [OxGarage](https://oxgarage.tei-c.org/#)
+    2.  Left: Convert from → Documents → TEI P5 XML Document
+    3.  Right: Convert to → xHTML
+    4.  Left: Select file to convert → Button *Browse*/*Sfoglia* →
+        select and upload your TEI XML file (`mytrascription.xml`)
+    5.  Right: Upload images → → Button *Browse*/*Sfoglia* → select and
+        upload the image with the manuscript page facsimile
+    6.  Bottom, center: click on button *Convert*
+    7.  In a few seconds, a download dialog window appears → click
+        *Save*/*Salva* to save the HTML file `mytranscription.html`
+    8.  Open the downloaded HTML file (double click; your default
+        browser will open it)
+13. Let\'s link our digital edition to an *IIIF* image:
+    1.  Linking (from within TEI) \<pb/\> to a whole IIIF JSON manifest:
 
-IIIF Presentation API documentation:
-https://iiif.io/api/presentation/2.1/
+            <pb n="13r" facs="http://213.21.172.53/manifests/public/0b002711800e7d6d.json"/>
 
+    2.  Linking \<pb/\> to a specific canvas (folio) within the IIIF
+        JSON manifest:
 
+            <pb n="13r" facs="http://213.21.172.53/manifests/public/0b002711800e7d6d.json#/sequences/0/canvases/35"/>
+                        
 
-## IIIF URLs
+    3.  Linking \<pb/\> to an image *file*:
 
-### JSON files
+            <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg"/>
+                        
 
-File GDoc summer school:
-https://docs.google.com/document/d/1WHQjPqfgKmJZfSQmdmAZ6RW_CNUNbC6ic22zvHMsGsM/edit#heading=h.ws30n8ta6qdo
+    4.  Linking \<lb/\> to an image *region* (fist line):
 
-Manifest:
-https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json
+            <lb n="13r.1" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default"/>
+                        
+:::
 
-info.json for a canvas:
-https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json
+::: {#links .section}
+Useful links {#useful-links lang="en"}
+------------
 
-JSON image description:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/info.json
+### XML editors: making writing XML code easier
 
+-   [Oxygen XML Editor](https://www.oxygenxml.com): [professional,
+    standard in TEI community, paid (with trial period), complete until
+    HTML transformation]{lang="en"}
+-   [XML Copy
+    Editor](https://sourceforge.net/projects/xml-copy-editor/): [open
+    source, free, installation]{lang="en"}
+-   [Online XML
+    Editor](https://www.tutorialspoint.com/online_xml_editor.htm): [for
+    this workshop only, no installation]{lang="en"}
 
-### Image visualization: full
+### Tools to process TEI XML for visualization
 
-Full image (middle-low resolution):
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default
+-   [Oxygen XML Editor](https://www.oxygenxml.com) (see above)
+-   [EVT](http://evt.labcd.unipi.it/) (Edition Visualization Technology)
+-   [OxGarage](https://oxgarage.tei-c.org/#): convert TEI XML to HTML
+    for visualization
+-   [TEI Critical Apparatus Toolbox](http://teicat.huma-num.fr/)
+    -   [Display parallel
+        versions](http://teicat.huma-num.fr/witnesses.php): [synoptic
+        visualization of textual variants]{lang="en"}
+    -   [Check your encoding](http://teicat.huma-num.fr/check.php):
+        [simple visualization]{lang="en"}
 
-With file extensions at the end:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jp2
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg
+### Guidelines, specifications and help
 
-With file extension before:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3.jp2/full/full/0/default
+-   TEI
+    -   [TEI Official website](https://tei-c.org/)
+    -   [TEI P5 Guidelines](https://tei-c.org/Guidelines/P5/) (go to
+        [Read
+        online](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html))
+    -   [TEI-L mailing list](https://tei-c.org/support/#tei-l)
+-   [IIIF official website](https://iiif.io/)
+-   Drop us an email: fcusimano at ambrosiana.it and
+    ![Contact](../indice/immagini/scansione.gif){.inlinea}
 
+### JSON and IIIF resources
 
-### Image visualization: regions
+-   Online JSON editors
+    -   [CuriousConcept](https://jsonformatter.curiousconcept.com/)
+    -   [JSON-editor](https://jsonformatter.org/json-editor)
+-   [Hacking Mirador](http://darthcrimson.org/hacking-mirador/)
+    -   [Darth Crimson Mirador
+        viewer](http://www.darthcrimson.org/mirador/)
+    -   [Oxford Bodleian Libraries IIIF manifest
+        editor](www.darthcrimson.org:3000): click on *Open manifest* and
+        paste
+        `http://213.21.172.53/manifests/public/0b002711800e7d6d.json`
+    -   [Annotation
+        extractor](http://www.darthcrimson.org/hacking-mirador-workshop/annotate.html):
+        click on *Load manifest* and paste
+        `http://213.21.172.53/manifests/public/0b002711800e7d6d.json`
+:::
 
-Illuminated initial:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/200,200,1200,1600/full/0/default
+::: {#biblio .section}
+Suggested readings {#suggested-readings lang="en"}
+------------------
 
-First line:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default
+### DH and TEI XML {#dh-and-tei-xml lang="en"}
 
+-   Orlandi, T. (2010), [Informatica testuale]{.tit lang="en it"}.
+    Teoria e prassi, Laterza, Roma.
+-   Pierazzo, E. (2015), [Digital Scholarly Editing: Theories, Models
+    and Methods]{.tit lang="en it"}, Ashgate, Farnham (Surrey, UK) and
+    Burlington (VT, USA),
+    <https://hal.archives-ouvertes.fr/hal-01182162/document>
+-   Stella, F. (2018), [Testi letterari e analisi digitale]{.tit
+    lang="en it"}, Carocci.
 
-# Image visualization: quality
+### IIIF {#iiif lang="en it"}
 
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default
-same as
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/color
+-   F. Cusimano, Due esempi di "buone pratiche" nell'uso dei metadati
+    XML. Un'efficace "disseminazione" dei contenuti digitalizzati,
+    C.R.E.L.E.B.- Università Cattolica, Milano, Edizioni CUSL, Milano
+    2014 (Minima Bibliographica, 19), ISBN: 978-88-8132-7058
+    <https://centridiricerca.unicatt.it/creleb-Cusimano.pdf>.
+-   L. Magnuson, [Store and display high resolution images with the
+    International Image Interoperability Framework (IIIF)]{.tit
+    lang="en it"}, in «ACRL TechConnect Blog», February 25, 2016,
+    <https://acrl.ala.org/techconnect/post/store-and-display-high-resolution-images-with-the-international-image-interoperability-framework-iiif/>
+-   A. Salarelli, [International Image Interoperability Framework
+    (IIIF): una panoramica]{.tit lang="en it"}, in «JLIS.it», 8, 1
+    (January 2017), pp. 50-66, DOI:
+    <http://dx.doi.org/10.4403/jlis.it-12090>
+-   F. Cusimano, [Biblioteche di conservazione & Data Curation: dal
+    Custos catalogi al Digital Librarian. Il caso della Veneranda
+    Biblioteca Ambrosiana]{.tit lang="en it"}, in «JLIS.it», 10, 1
+    (January 2019), pp. 125−139. DOI:
+    <http://dx.doi.org/10.4403/jlis.it-12513>
+:::
 
-Other qualities:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/gray
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/bitonal
-
-
-# Image visualization: rotation
-
-Rotation is allowed only for multiples of 90° in this IIIF server:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/90/default
-
-This returns an error:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/45/default
-
-Mirroring:
-https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/!0/color
-
-
-## Other MS
-
-Gallica (not chosen):
-https://gallica.bnf.fr/ark:/12148/btv1b52000858n/f152.item.zoom
+::: {#license-en .section lang="en"}
+[![Creative Commons
+License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)\
+This work is licensed under a [Creative Commons Attribution-ShareAlike
+4.0 International
+License](http://creativecommons.org/licenses/by-sa/4.0/).
+:::
+:::
