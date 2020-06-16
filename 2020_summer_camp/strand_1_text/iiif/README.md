@@ -21,30 +21,25 @@ Text 1: Strand
 
 0. [Framasoft shared pad](#)
 0. Other learning materials
-    1. [Paolo Monella Bologna
-        2020](https://www1.unipa.it/paolo.monella/reires2019/index.html)
-    2. [Paolo Monella and Roberto Rosselli Del Turco AIUCD
-        2020](https://www1.unipa.it/paolo.monella/aiucd2020/index.html)
-    3. [Tiziana Mancinelli Bologna
-        2020](https://slides.com/tizmancinelli/documenta-amoris#/)
+    1. [Paolo Monella Bologna 2020](https://www1.unipa.it/paolo.monella/reires2019/index.html)
+    2. [Paolo Monella and Roberto Rosselli Del Turco AIUCD 2020](https://www1.unipa.it/paolo.monella/aiucd2020/index.html)
+    3. [Tiziana Mancinelli Bologna 2020](https://slides.com/tizmancinelli/documenta-amoris#/)
+    4. [Summer camp home page](https://vedph.github.io/summercamp/)
 0. Documentation
-    1. [IIIF Presentation API
-        documentation](https://iiif.io/api/presentation/2.1/)
+    1. [IIIF Presentation API documentation](https://iiif.io/api/presentation/2.1/)
         (manifest.json)
     2. [IIIF Image API documentation](https://iiif.io/api/image/2.1/)
         (info.json)
 0. What\'s under the hood? IIIF JSON metadata files (manifest.json and
     info.json)
-    1. [File GDoc summer
-        school](https://docs.google.com/document/d/1WHQjPqfgKmJZfSQmdmAZ6RW_CNUNbC6ic22zvHMsGsM/edit#heading=h.ws30n8ta6qdo)
-    2. *Manifest*:
+    1. *Manifest*:
         https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json
         (`sequences/0/canvases/26/@id` points to:)
-    3. *Canvas*:
+    2. *Canvas*:
         [https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json
         (`images/0/resource/@id` points
         to:)](https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json)
-    4. *Image*:
+    3. *Image*:
         https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/info.json
 0. Let\'s manipulate an image with the IIIF Image API: full image
     1. Full image (middle-low resolution):
