@@ -1,13 +1,10 @@
-::: {role="main"}
-[VeDPH Summer Camp 2020]{.h1_sec lang="en it"} Linking Text and image: TEI XML and IIIF [Paolo Monella]{.h1_sec} {#vedph-summer-camp-2020-linking-text-and-image-tei-xml-and-iiif-paolo-monella lang="en it"}
-================================================================================================================
+VeDPH Summer Camp 2020]{.h1_sec lang="en it"}
 
-![[IIIF
-logo](https://commons.wikimedia.org/wiki/File:International_Image_Interoperability_Framework_logo.png)](img/International_Image_Interoperability_Framework_logo.png)
+# Linking Text and image: TEI XML and IIIF
 
-::: {#plan .section}
-Plan {#plan lang="en"}
-----
+Paolo Monella
+
+## Plan 
 
   Lecture (open)   Workshop (restricted)   Topic/activity
   ---------------- ----------------------- ------------------
@@ -19,9 +16,8 @@ Plan {#plan lang="en"}
   15.25-15.30      16.15-16.30             \...and to an IIIF image: \<pb/\> to a IIIF canvas, \<lb/\> to a cropped region
 :::
 
-::: {#materials .section}
-Materials and instructions {#materials-and-instructions lang="en"}
---------------------------
+
+## Materials and instructions
 
 1.  [Framasoft shared pad](#)
 2.  Other learning materials
@@ -137,9 +133,7 @@ Materials and instructions {#materials-and-instructions lang="en"}
                         
 :::
 
-::: {#links .section}
-Useful links {#useful-links lang="en"}
-------------
+## Useful links
 
 ### XML editors: making writing XML code easier
 
