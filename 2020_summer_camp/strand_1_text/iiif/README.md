@@ -19,8 +19,8 @@ Paolo Monella
 
 ## Materials and instructions
 
-1.  [Framasoft shared pad](#)
-2.  Other learning materials
+#.  [Framasoft shared pad](#)
+#.  Other learning materials
     1.  [Paolo Monella Bologna
         2020](https://www1.unipa.it/paolo.monella/reires2019/index.html)
     2.  [Paolo Monella and Roberto Rosselli Del Turco AIUCD
