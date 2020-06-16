@@ -188,6 +188,7 @@ Text 1: Strand
 
 ### DH and TEI XML 
 
+- Mancinelli, T. &nbsp;Pierazzo, E. (2020), *Che cos'è un'edizione scientifica digitale*, Carocci, Roma.
 - Orlandi, T. (2010), *Informatica testuale. Teoria e prassi*, Laterza, Roma.
 - Pierazzo, E. (2015), *Digital Scholarly Editing: Theories, Models and Methods*,
     Ashgate, Farnham (Surrey, UK) and Burlington (VT, USA),
