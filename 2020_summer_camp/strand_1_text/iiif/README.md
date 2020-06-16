@@ -64,7 +64,7 @@ Text 1: Strand
     4. [Further details](https://iiif.io/api/image/2.1/#size) from the
         API documentation
 
-![](images/crop.png?raw=true)
+![Fig. 1: Cropping](images/crop.png?raw=true)
 
 0. IIIF Image API: cropping (region)
     1. Drawing:
