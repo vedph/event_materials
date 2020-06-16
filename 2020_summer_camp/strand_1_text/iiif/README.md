@@ -49,9 +49,9 @@ Paolo Monella
 5.  Let\'s manipulate an image with the IIIF Image API: full image
     1.  Full image (middle-low resolution):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default>
-    2.  Same as above, with file extension at the end (.jpg)
+    2.  Same as above, with file extension at the end (.jpg):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jp2>
-    3.  Same as above, with file extension at the end (.jpg)
+    3.  Same as above, with file extension at the end (.jpg):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg>
     4.  Same as above, with file extension before (.jp2):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3.jp2/full/full/0/default>
