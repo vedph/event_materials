@@ -64,11 +64,15 @@ Text 1: Strand
     4. [Further details](https://iiif.io/api/image/2.1/#size) from the
         API documentation
 0. IIIF Image API: cropping (region)
-    1. Illuminated initial:
+    1. Drawing:
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/510,550,3580,3200/full/0/default
-    2. First line: [§ sgn]
-        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/default
-    3. [Further details](https://iiif.io/api/image/2.1/#region) from
+    2. Illuminated initial:
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/0/default
+    3. First line of the rubric (*Ci commence li livres du Grant Caam, qui parole de la grannt Ermenie de Perſſe*):
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/500,3550,3000,140/full/0/default
+    4. Second line of the rubric(*et deſ tartars et dŷnde. Et des granz merveille. qui ꝑ le monde ſont*):
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/530,3670,2400,140/full/0/default 
+    5. [Further details](https://iiif.io/api/image/2.1/#region) from
         the API documentation
 0. IIIF Image API: quality
     1. Default:
