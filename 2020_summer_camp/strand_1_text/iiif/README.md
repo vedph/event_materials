@@ -134,11 +134,11 @@ Text 1: Strand
 
 ## Images for size and crop
                         
-### Image 1: [size.png](size.png)
+### Figure 1: [size.png](size.png)
 
 ![](size.png?raw=true)
 
-### Image 2: [crop.png](crop.png)
+### Figure 2: [crop.png](crop.png)
 
 ![](crop.png?raw=true)
 
@@ -208,7 +208,7 @@ Text 1: Strand
     Ashgate, Farnham (Surrey, UK) and Burlington (VT, USA),
     https://hal.archives-ouvertes.fr/hal-01182162/document
 - Stella, F. (2018), *Testi letterari e analisi digitale*, Carocci.
-
+ 
 ### IIIF 
 
 - F. Cusimano, *Due esempi di "buone pratiche" nell'uso dei metadati
@@ -223,4 +223,4 @@ Text 1: Strand
 - A. Salarelli, *International Image Interoperability Framework
     (IIIF): una panoramica*, in «JLIS.it», 8, 1
     (January 2017), pp. 50-66, DOI:
-    http://dx.doi.org/10.4403/jlis.it-12090
+    attp://dx.doi.org/10.4403/jlis.it-12090
