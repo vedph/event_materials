@@ -70,27 +70,27 @@ Text 1: Strand
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/0/default
     3. First line of the rubric (*Ci commence li livres du Grant Caam, qui parole de la grannt Ermenie de Perſſe*):
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/500,3550,3000,140/full/0/default
-    4. Second line of the rubric(*et deſ tartars et dŷnde. Et des granz merveille. qui ꝑ le monde ſont*):
+    4. Second line of the rubric (*et deſ tartars et dŷnde. Et des granz merveille. qui ꝑ le monde ſont*):
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/530,3670,2400,140/full/0/default 
     5. [Further details](https://iiif.io/api/image/2.1/#region) from
         the API documentation
 0. IIIF Image API: quality
     1. Default:
-        [http://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/default](https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/default)
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/0/default
     1. Color (same as 'default')
-        http://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/color
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/0/color
     2. Gray
-        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/gray
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/0/gray
     3. Bitonal (black and white)
-        http://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/bitonal
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/0/bitonal
 0. IIIF Image API: rotation
     1. Rotate 90°:
-        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/90/default
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/90/default
     2. Rotation is allowed only for multiples of 90° in this IIIF
-        server, so 45° returns an error:
-        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/45/default
+       server, so 45° returns an error:
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/45/default
     3. Mirroring:
-        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/!0/color
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/!0/default
 0. Gallica Manuscript (not used in this workshop):
         https://gallica.bnf.fr/ark:/12148/btv1b52000858n/f152.item.zoom
 0. Let\'s link our digital edition to a *local* image (from within TEI)
