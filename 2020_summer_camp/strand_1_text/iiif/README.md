@@ -21,77 +21,77 @@ Text 1: Strand
 
 0. [Framasoft shared pad](#)
 0. Other learning materials
-    a. [Paolo Monella Bologna
+    1. [Paolo Monella Bologna
         2020](https://www1.unipa.it/paolo.monella/reires2019/index.html)
-    b. [Paolo Monella and Roberto Rosselli Del Turco AIUCD
+    2. [Paolo Monella and Roberto Rosselli Del Turco AIUCD
         2020](https://www1.unipa.it/paolo.monella/aiucd2020/index.html)
-    c. [Tiziana Mancinelli Bologna
+    3. [Tiziana Mancinelli Bologna
         2020](https://slides.com/tizmancinelli/documenta-amoris#/)
 0. Documentation
-    0. [IIIF Presentation API
+    1. [IIIF Presentation API
         documentation](https://iiif.io/api/presentation/2.1/)
         (manifest.json)
-    0. [IIIF Image API documentation](https://iiif.io/api/image/2.1/)
+    2. [IIIF Image API documentation](https://iiif.io/api/image/2.1/)
         (info.json)
 0. What\'s under the hood? IIIF JSON metadata files (manifest.json and
     info.json)
-    0. [File GDoc summer
+    1. [File GDoc summer
         school](https://docs.google.com/document/d/1WHQjPqfgKmJZfSQmdmAZ6RW_CNUNbC6ic22zvHMsGsM/edit#heading=h.ws30n8ta6qdo)
-    0. *Manifest*:
+    2. *Manifest*:
         <https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json>
         (`sequences/0/canvases/26/@id` points to:)
-    0. *Canvas*:
+    3. *Canvas*:
         [https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json
         (`images/0/resource/@id` points
         to:)](https://iiif.bodleian.ox.ac.uk/iiif/canvas/b923ae49-638f-4d8d-99a4-71def3bf7bc3.json)
-    0. *Image*:
+    4. *Image*:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/info.json>
 0. Let\'s manipulate an image with the IIIF Image API: full image
-    0. Full image (middle-low resolution):
+    1. Full image (middle-low resolution):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default>
-    0. Same as above, with file extension at the end (.jpg):
+    2. Same as above, with file extension at the end (.jpg):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jp2>
-    0. Same as above, with file extension at the end (.jpg):
+    3. Same as above, with file extension at the end (.jpg):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg>
-    0. Same as above, with file extension before (.jp2):
+    4. Same as above, with file extension before (.jp2):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3.jp2/full/full/0/default>
 0. IIIF Image API: resizing (size)
-    0. Width 200 px:
+    1. Width 200 px:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/200,/0/default>
-    0. Height 200 px:
+    2. Height 200 px:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/,200/0/default>
-    0. Squeeze to 50 (width) x 600 (heigth):
+    3. Squeeze to 50 (width) x 600 (heigth):
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/50,600/0/default>
-    0. [Further details](https://iiif.io/api/image/2.1/#size) from the
+    4. [Further details](https://iiif.io/api/image/2.1/#size) from the
         API documentation
 0. IIIF Image API: cropping (region)
-    0. Illuminated initial:
+    1. Illuminated initial:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/200,200,1200,1600/full/0/default>
-    0. First line:
+    2. First line:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default>
-    0. [Further details](https://iiif.io/api/image/2.1/#region) from
+    3. [Further details](https://iiif.io/api/image/2.1/#region) from
         the API documentation
 0. IIIF Image API: quality
-    0. Default:
+    1. Default:
         [http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default](https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default)
-    0. Color (same as 'default')
+    1. Color (same as 'default')
         <http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/color>
-    0. Gray
+    2. Gray
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/gray>
-    0. Bitonal (black and white)
+    3. Bitonal (black and white)
         <http://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/bitonal>
 0. IIIF Image API: rotation
-    0. Rotate 90°:
+    1. Rotate 90°:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/90/default>
-    0. Rotation is allowed only for multiples of 90° in this IIIF
+    2. Rotation is allowed only for multiples of 90° in this IIIF
         server, so 45° returns an error:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/45/default>
-    0. Mirroring:
+    3. Mirroring:
         <https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/!0/color>
 0. Gallica Manuscript (not used in this workshop):
     <https://gallica.bnf.fr/ark:/12148/btv1b52000858n/f152.item.zoom>
 0. Let\'s link our digital edition to a *local* image (from within TEI)
-    0. Download image [D23sup.jpg](img/D23sup.jpg)
+    1. Download image [D23sup.jpg](img/D23sup.jpg)
     .  Write this in your TEI code:
 
             <pb n="D23sup" facs="D23sup.jpg"/>
@@ -99,35 +99,35 @@ Text 1: Strand
 0. Let\'s visualize our edition linked to a *local* image (we use
     [OxGarage](https://oxgarage.tei-c.org/#) to convert TEI XML to
     HTML). Instructions:
-    0. Go to [OxGarage](https://oxgarage.tei-c.org/#)
-    0. Left: Convert from → Documents → TEI P5 XML Document
-    0. Right: Convert to → xHTML
-    0. Left: Select file to convert → Button *Browse*/*Sfoglia* →
+    1. Go to [OxGarage](https://oxgarage.tei-c.org/#)
+    2. Left: Convert from → Documents → TEI P5 XML Document
+    3. Right: Convert to → xHTML
+    4. Left: Select file to convert → Button *Browse*/*Sfoglia* →
         select and upload your TEI XML file (`mytrascription.xml`)
-    0. Right: Upload images → → Button *Browse*/*Sfoglia* → select and
+    5. Right: Upload images → → Button *Browse*/*Sfoglia* → select and
         upload the image with the manuscript page facsimile
-    0. Bottom, center: click on button *Convert*
-    0. In a few seconds, a download dialog window appears → click
+    6. Bottom, center: click on button *Convert*
+    7. In a few seconds, a download dialog window appears → click
         *Save*/*Salva* to save the HTML file `mytranscription.html`
-    0. Open the downloaded HTML file (double click; your default
+    8. Open the downloaded HTML file (double click; your default
         browser will open it)
 0. Let\'s link our digital edition to an *IIIF* image:
-    0. Linking (from within TEI) \<pb/\> to a whole IIIF JSON manifest:
+    1. Linking (from within TEI) \<pb/\> to a whole IIIF JSON manifest:
 
             <pb n="13r" facs="http://213.21.172.53/manifests/public/0b002711800e7d6d.json"/>
 
-    0. Linking \<pb/\> to a specific canvas (folio) within the IIIF
+    2. Linking \<pb/\> to a specific canvas (folio) within the IIIF
         JSON manifest:
 
             <pb n="13r" facs="http://213.21.172.53/manifests/public/0b002711800e7d6d.json#/sequences/0/canvases/35"/>
                         
 
-    0. Linking \<pb/\> to an image *file*:
+    3. Linking \<pb/\> to an image *file*:
 
             <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/full/full/0/default.jpg"/>
                         
 
-    0. Linking \<lb/\> to an image *region* (fist line):
+    4. Linking \<lb/\> to an image *region* (fist line):
 
             <lb n="13r.1" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/b923ae49-638f-4d8d-99a4-71def3bf7bc3/1300,580,900,160/full/0/default"/>
                         
