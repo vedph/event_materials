@@ -133,6 +133,13 @@ Text 1: Strand
 
             <lb n="13r.1" facs="https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/default"/>
                         
+Image 1: [size.png](size.png)
+
+![](size.png?raw=true)
+
+Image 2: [crop.png](crop.png)
+
+![](crop.png?raw=true)
 
 ## Useful links
 
