@@ -61,11 +61,9 @@ Text 1: Strand
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/,200/0/default
     3. Squeeze to 50 (width) x 600 (heigth):
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/50,600/0/default
-    4. [Further details](https://iiif.io/api/image/2.1/#size) from the
+    4. See image [size.png](size.png) from this repository
+    5. [Further details](https://iiif.io/api/image/2.1/#size) from the
         API documentation
-
-![Fig. 1: Cropping](images/crop.png?raw=true)
-
 0. IIIF Image API: cropping (region)
     1. Drawing:
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/510,550,3580,3200/full/0/default
@@ -75,8 +73,8 @@ Text 1: Strand
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/500,3550,3000,140/full/0/default
     4. Second line of the rubric (*et deſ tartars et dŷnde. Et des granz merveille. qui ꝑ le monde ſont*):
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/530,3670,2400,140/full/0/default 
-    5. [Further details](https://iiif.io/api/image/2.1/#region) from
-        the API documentation
+    5. See image [crop.png](crop.png) from this repository
+    6. [Further details](https://iiif.io/api/image/2.1/#region) from the API documentation
 0. IIIF Image API: quality
     1. Default:
        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/230,3650,980,1120/full/0/default
@@ -97,7 +95,7 @@ Text 1: Strand
 0. Gallica Manuscript (not used in this workshop):
         https://gallica.bnf.fr/ark:/12148/btv1b52000858n/f152.item.zoom
 0. Let\'s link our digital edition to a *local* image (from within TEI)
-    1. Download image [D23sup.jpg](img/D23sup.jpg)
+    1. Download image [D23sup.jpg](D23sup.jpg) from this repository
     .  Write this in your TEI code:
 
             <pb n="D23sup" facs="D23sup.jpg"/>
