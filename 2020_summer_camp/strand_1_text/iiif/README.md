@@ -54,9 +54,6 @@ Text 1: Strand
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/full/0/default.jpg
     4. Same as above, with file extension before (.jp2):
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/full/0/default
-
-## OLD AGAIN
-
 0. IIIF Image API: resizing (size)
     1. Width 200 px:
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/full/200,/0/default
