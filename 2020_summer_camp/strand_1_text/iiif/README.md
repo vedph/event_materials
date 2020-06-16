@@ -65,8 +65,8 @@ Text 1: Strand
         API documentation
 0. IIIF Image API: cropping (region)
     1. Illuminated initial:
-        https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/200,200,1200,1600/full/0/default
-    2. First line:
+       https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/510,550,3580,3200/full/0/default
+    2. First line: [§ sgn]
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3/1300,580,900,160/full/0/default
     3. [Further details](https://iiif.io/api/image/2.1/#region) from
         the API documentation
