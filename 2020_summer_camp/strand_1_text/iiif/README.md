@@ -30,10 +30,6 @@ Text 1: Strand
         (manifest.json)
     2. [IIIF Image API documentation](https://iiif.io/api/image/2.1/)
         (info.json)
-0. OLD/NEW
-    1. OLD canvas: 699adfb3-a5da-4b09-9759-41eee3713bc3
-    1. NEW canvas: 699adfb3-a5da-4b09-9759-41eee3713bc3
-    https://iiif.bodleian.ox.ac.uk/iiif/canvas/699adfb3-a5da-4b09-9759-41eee3713bc3.json"
 0. What\'s under the hood? IIIF JSON metadata files (manifest.json and
     info.json)
     1. *Manifest*:
