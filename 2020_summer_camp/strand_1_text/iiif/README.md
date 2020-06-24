@@ -25,11 +25,17 @@ Text 1: Strand
     2. [Paolo Monella and Roberto Rosselli Del Turco AIUCD 2020](https://www1.unipa.it/paolo.monella/aiucd2020/index.html)
     3. [Tiziana Mancinelli Bologna 2020](https://slides.com/tizmancinelli/documenta-amoris#/)
     4. [Summer camp home page](https://vedph.github.io/summercamp/)
-0. Documentation
-    1. [IIIF Presentation API documentation](https://iiif.io/api/presentation/2.1/)
-        (manifest.json)
-    2. [IIIF Image API documentation](https://iiif.io/api/image/2.1/)
-        (info.json)
+0. What is IIIF? What does it do?
+    1. IIIF is a protocol (a language shared between computers) to serve images with medatata
+    2. Collection of images
+        - Presentation API: [documentation](https://iiif.io/api/presentation/2.1/)
+        - `manifest.json' metadata file
+    3. Individual image (_canvas_)
+        - Image API: [documentation](https://iiif.io/api/image/2.1/)
+        - `info.json' metadata file
+    4. Image API: resizing, cropping etc. happens on the server
+        - I can ask for a specific size, region etc. of an image through an URL
+        - The server creates an _ad hoc_ image and only returns that
 0. What\'s under the hood? IIIF JSON metadata files (manifest.json and
     info.json)
     1. *Manifest*:
@@ -39,7 +45,7 @@ Text 1: Strand
         https://iiif.bodleian.ox.ac.uk/iiif/canvas/699adfb3-a5da-4b09-9759-41eee3713bc3.json
         (`images/0/resource/@id` points
         to:)
-    3. *Image*:
+    3. *Image file*:
         https://iiif.bodleian.ox.ac.uk/iiif/image/699adfb3-a5da-4b09-9759-41eee3713bc3.json
 0. Let\'s manipulate an image with the IIIF Image API: full image
     1. Full image (middle-low resolution):
