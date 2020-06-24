@@ -25,6 +25,7 @@ Text 1: Strand
     2. [Paolo Monella and Roberto Rosselli Del Turco AIUCD 2020](https://www1.unipa.it/paolo.monella/aiucd2020/index.html)
     3. [Tiziana Mancinelli Bologna 2020](https://slides.com/tizmancinelli/documenta-amoris#/)
     4. [Summer camp home page](https://vedph.github.io/summercamp/)
+    5. [Hacking Mirador](http://darthcrimson.org/hacking-mirador/)
 0. What is IIIF? What does it do?
     1. [IIIF](https://iiif.io/) is a protocol (a language shared between computers) to serve images with medatata
     2. Collection of images
@@ -143,86 +144,3 @@ Text 1: Strand
 ### Figure 2: [crop.png](crop.png)
 
 ![](crop.png?raw=true)
-
-
-
-## Useful links
-
-### XML editors: making writing XML code easier
-
-- [Oxygen XML Editor](https://www.oxygenxml.com): [professional,
-    standard in TEI community, paid (with trial period), complete until
-    HTML transformation]
-- [XML Copy
-    Editor](https://sourceforge.net/projects/xml-copy-editor/): [open
-    source, free, installation]
-- [Online XML
-    Editor](https://www.tutorialspoint.com/online_xml_editor.htm): [for
-    this workshop only, no installation]
-
-### Tools to process TEI XML for visualization
-
-- [Oxygen XML Editor](https://www.oxygenxml.com) (see above)
-- [EVT](http://evt.labcd.unipi.it/) (Edition Visualization Technology)
-- [OxGarage](https://oxgarage.tei-c.org/#): convert TEI XML to HTML
-    for visualization
-- [TEI Critical Apparatus Toolbox](http://teicat.huma-num.fr/)
-    - [Display parallel
-        versions](http://teicat.huma-num.fr/witnesses.php): [synoptic
-        visualization of textual variants]
-    - [Check your encoding](http://teicat.huma-num.fr/check.php):
-        [simple visualization]
-
-### Guidelines, specifications and help
-
-- TEI
-    - [TEI Official website](https://tei-c.org/)
-    - [TEI P5 Guidelines](https://tei-c.org/Guidelines/P5/) (go to
-        [Read
-        online](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html))
-    - [TEI-L mailing list](https://tei-c.org/support/#tei-l)
-- [IIIF official website](https://iiif.io/)
-
-### JSON and IIIF resources
-
-- Online JSON editors
-    - [CuriousConcept](https://jsonformatter.curiousconcept.com/)
-    - [JSON-editor](https://jsonformatter.org/json-editor)
-- [Hacking Mirador](http://darthcrimson.org/hacking-mirador/)
-    - [Darth Crimson Mirador
-        viewer](http://www.darthcrimson.org/mirador/)
-    - [Oxford Bodleian Libraries IIIF manifest
-        editor](www.darthcrimson.org:3000): click on *Open manifest* and
-        paste
-        `http://213.21.172.53/manifests/public/0b002711800e7d6d.json`
-    - [Annotation
-        extractor](http://www.darthcrimson.org/hacking-mirador-workshop/annotate.html):
-        click on *Load manifest* and paste
-        `http://213.21.172.53/manifests/public/0b002711800e7d6d.json`
-
-# Suggested readings
-
-### DH and TEI XML 
-
-- Mancinelli, T. &nbsp;Pierazzo, E. (2020), *Che cos'è un'edizione scientifica digitale*, Carocci, Roma.
-- Orlandi, T. (2010), *Informatica testuale. Teoria e prassi*, Laterza, Roma.
-- Pierazzo, E. (2015), *Digital Scholarly Editing: Theories, Models and Methods*,
-    Ashgate, Farnham (Surrey, UK) and Burlington (VT, USA),
-    https://hal.archives-ouvertes.fr/hal-01182162/document
-- Stella, F. (2018), *Testi letterari e analisi digitale*, Carocci.
- 
-### IIIF 
-
-- F. Cusimano, *Due esempi di "buone pratiche" nell'uso dei metadati
-    XML. Un'efficace "disseminazione" dei contenuti digitalizzati*,
-    C.R.E.L.E.B.- Università Cattolica, Milano, Edizioni CUSL, Milano
-    2014 (Minima Bibliographica, 19), ISBN: 978-88-8132-7058
-    https://centridiricerca.unicatt.it/creleb-Cusimano.pdf
-- L. Magnuson, *Store and display high resolution images with the
-    International Image Interoperability Framework (IIIF)*,
-    in «ACRL TechConnect Blog», February 25, 2016,
-    https://acrl.ala.org/techconnect/post/store-and-display-high-resolution-images-with-the-international-image-interoperability-framework-iiif/
-- A. Salarelli, *International Image Interoperability Framework
-    (IIIF): una panoramica*, in «JLIS.it», 8, 1
-    (January 2017), pp. 50-66, DOI:
-    attp://dx.doi.org/10.4403/jlis.it-12090
