@@ -1,9 +1,11 @@
 
 # Linking Text and image: TEI XML and IIIF
 
-Paolo Monella,
-VeDPH Summer Camp 2020,
-Text 1: Strand
+Paolo Monella
+
+VeDPH Summer Camp 2020
+
+Strand 1: Text
 
 ## Plan 
 
@@ -30,10 +32,10 @@ Text 1: Strand
     1. [IIIF](https://iiif.io/) is a protocol (a language shared between computers) to serve images with medatata
     2. Collection of images
         - Presentation API: [documentation](https://iiif.io/api/presentation/2.1/)
-        - `manifest.json' metadata file
+        - `manifest.json` metadata file
     3. Individual image (_canvas_)
         - Image API: [documentation](https://iiif.io/api/image/2.1/)
-        - `info.json' metadata file
+        - `info.json` metadata file
     4. Image API: resizing, cropping etc. happens on the server
         - I can ask for a specific size, region etc. of an image through an URL
         - The server creates an _ad hoc_ image and only returns that
@@ -109,13 +111,13 @@ Text 1: Strand
     1. Go to [OxGarage](https://oxgarage.tei-c.org/#)
     2. Left: Convert from → Documents → TEI P5 XML Document
     3. Right: Convert to → xHTML
-    4. Left: Select file to convert → Button *Browse*/*Sfoglia* →
+    4. Left: Select file to convert → Button *Browse/Sfoglia* →
         select and upload your TEI XML file (`mytrascription.xml`)
-    5. Right: Upload images → Button *Browse*/*Sfoglia* → select and
+    5. Right: Upload images → Button *Browse/Sfoglia* → select and
         upload the image with the manuscript page facsimile
     6. Bottom, center: click on button *Convert*
     7. In a few seconds, a download dialog window appears → click
-        *Save*/*Salva* to save the HTML file `mytranscription.html`
+        *Save/Salva* to save the HTML file `mytranscription.html`
     8. Open the downloaded HTML file (double click; your default
         browser will open it)
 0. Let\'s link our digital edition to an *IIIF* image:
@@ -123,7 +125,7 @@ Text 1: Strand
 
             <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/manifest/ae9f6cca-ae5c-4149-8fe4-95e6eca1f73c.json"/>
 
-    2. Linking \<pb/\> to a specific canvas `info.json':
+    2. Linking \<pb/\> to a specific canvas `info.json`:
 
             <pb n="13r" facs="https://iiif.bodleian.ox.ac.uk/iiif/canvas/699adfb3-a5da-4b09-9759-41eee3713bc3.json"/>
                         
