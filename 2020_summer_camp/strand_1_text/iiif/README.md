@@ -26,7 +26,7 @@ Text 1: Strand
     3. [Tiziana Mancinelli Bologna 2020](https://slides.com/tizmancinelli/documenta-amoris#/)
     4. [Summer camp home page](https://vedph.github.io/summercamp/)
 0. What is IIIF? What does it do?
-    1. IIIF is a protocol (a language shared between computers) to serve images with medatata
+    1. [IIIF](https://iiif.io/) is a protocol (a language shared between computers) to serve images with medatata
     2. Collection of images
         - Presentation API: [documentation](https://iiif.io/api/presentation/2.1/)
         - `manifest.json' metadata file
