@@ -22,3 +22,5 @@ Strand 1: Text
 ## Slides
 
 Temporarily uploaded to <https://www1.unipa.it/paolo.monella/iiif2020/>
+
+A PDF version of those slides is in file `iiif2020.pdf` in this repository.
