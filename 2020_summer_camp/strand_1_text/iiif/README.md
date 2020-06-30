@@ -21,6 +21,6 @@ Strand 1: Text
 
 ## Slides
 
-Temporarily uploaded to <https://www1.unipa.it/paolo.monella/iiif2020/>
-
-A PDF version of those slides is in file `iiif2020.pdf` in this repository.
+- Viewable version: temporarily uploaded to <https://www1.unipa.it/paolo.monella/iiif2020/>
+- PDF version (possibly not updated to the last version): `iiif2020.pdf` in this repository
+- in folder `slides` of this folder you can find the same files of the browsable version, but you should download the whole folder and run its file `index.html` in your own computer to view them.
