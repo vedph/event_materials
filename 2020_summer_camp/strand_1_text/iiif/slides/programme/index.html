@@ -1,0 +1,34 @@
+---
+layout: category
+category: programme
+---
+
+<div>
+  <h4>Monday, 6  July</h4>
+  <p><strong>11:00-11:45</strong> - Welcome, <strong>Opening Keynote by Elena Pierazzo</strong> [plenary, open]<br />
+  followed by introductions to the individual strands
+
+  afternoon: strand activities</p>
+
+  <h4>Tuesday, 7 July</h4>
+  <p>strand activities in the morning and in the afternoon</p>
+
+  <h4>Wednesday, 8 July</h4>
+  <p>strand activities in the morning and in the afternoon</p>
+
+  <h4>Thursday, 9 July</h4>
+  <p>strand activities in the morning and in the afternoon</p>
+
+  <h4>Friday, 10 July</h4>
+  <p>morning: strand activities</p>
+  <p><strong>15:00-15:45</strong> - Farewell, <strong>Closing Keynote by Fabio Vitali</strong> [plenary, open]</p>
+
+  <h2>Strand activies:</h2>
+
+  </div>
+
+{% for p in site.pages %}
+  {% if p.subcategory == "programme" %}
+    {% include card.html %}
+  {% endif %}
+{% endfor %}

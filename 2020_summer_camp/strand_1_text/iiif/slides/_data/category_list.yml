@@ -1,0 +1,12 @@
+#This file defines all the categories you are using
+
+
+programme:
+  name: Programme
+  description: General schedule
+speakers:
+  name: Speakers
+  description:
+infocontacts:
+  name: Further info & contact
+  description: For further information, please contact vedph [@] unive.it

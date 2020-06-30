@@ -1,0 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: VeDPH - Summer Camp
+description:
+baseurl: /summercamp # the subpath of your site, e.g. /support
+permalink: /:categories/:title
+
+# Let's show posts with date in the future too
+future: true
+
+brand_logo: logo.png
+brand_name: VeDPH
+header: VENICE VIRTUAL SUMMER CAMP ON DIGITAL AND PUBLIC HUMANITIES
+subheader: 6-10 July 2020
+
+# Social Links
+twitter_username: venicedph
+facebook_page:
+github_username: vedph
+email: vedph@unive.it
+linkedin_page:
+instagram_username:
+
+
+# Navigation
+nav_button: VeDPH website
+nav_button_link: https://www.unive.it/vedph
+
+# More Help
+help_one_title: Where to find materials
+help_one_content: Teaching materials of open lectures and workshops are in our GitHub repository
+help_one_button: VeDH GitHub repository
+help_one_link: https://github.com/vedph/event_materials/tree/master/2020_summer_camp
+
+help_two_title: Twitter
+help_two_content: Feel free to tweet at us if you have suggestions.
+help_two_link: https://twitter.com/vedph
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed

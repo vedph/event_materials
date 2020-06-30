@@ -1,0 +1,20 @@
+<div class="column col-12">
+  <a href="{{ site.baseurl}}{{ p.url }}">
+    <div class="card card-link my-1" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <div class="card-body">
+        <div class="columns col-x-align">
+          <div class="column col col-sm-12">
+            <h5 class="text-semibold m-0">{{ p.title }}</h5>
+            <p class="m-0 text-dark">{{ p.short-description }}</p>
+            {% if p.date-hidden != true %}
+              <p class="text-dark text-small text-italic mb-0">{{ p.date | date: '%B %d, %Y' }}</p>
+            {% endif %}
+          </div>
+          <div class="column col-auto hide-sm">
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
