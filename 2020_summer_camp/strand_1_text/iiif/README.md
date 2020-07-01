@@ -7,7 +7,7 @@ VeDPH Summer Camp 2020
 
 Strand 1: Text
 
-## Plan 
+## Plan
 
 | Lecture (open)   | Workshop (restricted)   | Topic/activity |
 | ---------------- | ----------------------- | ------------------ |
@@ -21,6 +21,5 @@ Strand 1: Text
 
 ## Slides
 
-- Viewable version: temporarily uploaded to <https://www1.unipa.it/paolo.monella/iiif2020/>
-- PDF version (possibly not updated to the last version): `iiif2020.pdf` in this repository
-- in folder `slides` of this folder you can find the same files of the browsable version, but you should download the whole folder and run its file `index.html` in your own computer to view them.
+- HTML version: <https://vedph.github.io/summercamp/materials/monella/slides/index.html#/>
+- PDF version (possibly not updated to the last version): file `iiif2020.pdf` in this repository
