@@ -1,0 +1,30 @@
+div.block{
+    display: block;
+}
+p{
+    text-align: justify;
+    margin: 1%;
+}
+div.odd{
+    background: #ffffff;
+}
+div.even{
+    background: #f0f0f0;
+}
+.orig{
+    font-weight: bold;
+    color: #00008f;
+}
+.eng-transl{
+    font-style: italic;
+    font-weight: bold;
+}
+.ita-transl{
+    font-style: italic;
+}
+h1{
+    color: #00008f;
+}
+h2{
+    color: #00004f;
+}
