@@ -4,7 +4,7 @@
 ## Slides
 
 ## Assignment
-Copy and paste the first two paragraphs from the transcription of the MS-Bodleian 264, 218r-v (https://bit.ly/31MMfwg) with the related translations in English and Italian and create an html file with six paragraph (<p> ... </p>).
+Copy and paste the first two paragraphs from the transcription of the MS-Bodleian 264, 218r-v (https://bit.ly/31MMfwg) with the related translations in English and Italian and create an html file with six paragraph (&lt;p&gt; ... &lt;/p&gt;).
 
 Try to color in blue the original paragraphs; render in bold the English translations and render in italic the Italian translations.
 
