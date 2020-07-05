@@ -14,8 +14,8 @@ A more complex layout for the same content and document structure is available a
 
 ## Useful links
 - World Wide Web Consortium (W3C) web-site: https://www.w3.org
--- W3C Recommendation: https://www.w3.org/TR/2017/REC-html52-20171214/
--- HTML Living Standard: https://html.spec.whatwg.org/
+  - W3C Recommendation: https://www.w3.org/TR/2017/REC-html52-20171214/
+  - HTML Living Standard: https://html.spec.whatwg.org/
 - Unicode Consortium: http://unicode.org
 
 
