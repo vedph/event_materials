@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>XML Report</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #fcfcfc;
+        }
+        /*
+         * CSS3 Treeview. No JavaScript
+         * @version 1.0
+         * @author Martin Ivanov
+         * @url developer's website: http://wemakesites.net/
+         * @url developer's twitter: https://twitter.com/#!/wemakesitesnet
+         * @url developer's blog http://acidmartin.wordpress.com/
+         **/
+        .css-treeview ul,
+        .css-treeview li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .css-treeview input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .css-treeview {
+            font: normal 16px "Segoe UI", Arial, Sans-serif;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+            .css-treeview a {
+                color: #00f;
+                text-decoration: none;
+            }
+
+                .css-treeview a:hover {
+                    text-decoration: underline;
+                }
+
+            .css-treeview input + label + ul {
+                margin: 0 0 0 22px;
+            }
+
+            .css-treeview input ~ ul {
+                display: none;
+            }
+
+            .css-treeview label,
+            .css-treeview label::before {
+                cursor: pointer;
+            }
+
+            .css-treeview input:disabled + label {
+                cursor: default;
+                opacity: .6;
+            }
+
+            .css-treeview input:checked:not(:disabled) ~ ul {
+                display: block;
+            }
+
+            .css-treeview label,
+            .css-treeview label::before {
+                background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAACgCAYAAAAFOewUAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAApxJREFUeNrslM1u00AQgGdthyalFFOK+ClIIKQKyqUVQvTEE3DmAhLwAhU8QZoH4A2Q2gMSFace4MCtJ8SPBFwAkRuiHKpA6sRN/Lu7zG5i14kctaUqRGhGXnu9O/Pt7MzsMiklvF+9t2kWTDvyIrAsA0aKRRi1T0C/hJ4LUbt5/8rNpWVlp8RSr9J40b48fxFaTQ9+ft8EZ6MJYb0Ok+dnYGpmPgXwKIAvLx8vYXc5GdMAQJgQEkpjRTh36TS2U+DWW/D17WuYgm8pwJyY1npZsZKOxImOV1I/h4+O6vEg5GCZBpgmA6hX8wHKUHDRBXQYicQ4rlc3Tf0VMs8DHBS864F2YFspjgUYjKX/Az3gsdQd2eeBHwmdGWXHcgBGSkZXOXohcEXebRoQcAgjqediNY+AVyu3Z3sAKqfKoGMsewBeEIOPgQxxPJIjcGH6qtL/0AdADzKGnuuD+2tLK7Q8DhHHbOBW+KEzcHLuYc82MkEUekLiwuvVH+guQBQzOG4XdAb8EOcRcqQvDkY2iCLuxECJ43JobMXoutqGgDa2T7UqLKwt9KRyuxKVByqVXXqIoCCUCAqhUOioTWC7G4TQEOD0APy2/7G2Xpu1J4+lxeQ4TXBbITDpoVelRN/BVFbwu5oMMJUBhoXy5tmdRcMwymP2OLQaLjx9/vnBo6V3K6izATmSnMa0Dq7ferIohJhr1p01zrlz49rZF4OMs8JkX23vVQzYp+wbYGV/KpXKjvspl8tsIKCrMNAYFxj2GKS5ZWxg4ewKsJfaGMIY5KXqPz8LBBj6+yDvVP79+yDp/9F9oIx3OisHWwe7Oal0HxCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgwD8E/BZgAP0qhKj3rXO7AAAAAElFTkSuQmCC") no-repeat;
+            }
+
+                .css-treeview label,
+                .css-treeview a,
+                .css-treeview label::before {
+                    display: inline-block;
+                    height: 16px;
+                    line-height: 16px;
+                    vertical-align: middle;
+                }
+
+            .css-treeview label {
+                background-position: 18px 0;
+            }
+
+                .css-treeview label::before {
+                    content: "";
+                    width: 16px;
+                    margin: 0 22px 0 0;
+                    vertical-align: middle;
+                    background-position: 0 -32px;
+                }
+
+            .css-treeview input:checked + label::before {
+                background-position: 0 -16px;
+            }
+
+        /* webkit adjacent element selector bugfix */
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            .css-treeview {
+                -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+            }
+
+            @-webkit-keyframes webkit-adjacent-element-selector-bugfix {
+                from {
+                    padding: 0;
+                }
+
+                to {
+                    padding: 0;
+                }
+            }
+        }
+
+        .css-treeview span.n {
+            color: #33afad;
+        }
+
+        .css-treeview span.tn {
+            color: #33b242;
+        }
+
+        .css-treeview span.leaf {
+            color: #f45342;
+        }
+
+        .css-treeview span.empty {
+            color: #9cada2;
+        }
+
+        .css-treeview .attr {
+            color: #ef9e2d;
+        }
+
+        .css-treeview span.loc {
+            color: silver;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>XML Report</h1>
+    <div class="css-treeview">
+        <ul>
+            <li><input type="checkbox" checked="checked" id="i0" /><label for="i0"><strong>TEI</strong> <span class="n">[1]</span>  <span class="attr">[@6]</span> <span class="loc">/TEI</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i1" /><label for="i1" class="attr">@<strong>{http://www.w3.org/2000/xmlns/}dbo</strong> <span class="n">[1]</span></label>
+<li><input type="checkbox" checked="checked" id="i2" /><label for="i2" class="attr">@<strong>{http://www.w3.org/2000/xmlns/}foaf</strong> <span class="n">[1]</span></label>
+<li><input type="checkbox" checked="checked" id="i3" /><label for="i3" class="attr">@<strong>{http://www.w3.org/2000/xmlns/}rdf</strong> <span class="n">[1]</span></label>
+<li><input type="checkbox" checked="checked" id="i4" /><label for="i4" class="attr">@<strong>{http://www.w3.org/2000/xmlns/}rdfs</strong> <span class="n">[1]</span></label>
+<li><input type="checkbox" checked="checked" id="i5" /><label for="i5" class="attr">@<strong>{http://www.w3.org/2000/xmlns/}tei</strong> <span class="n">[1]</span></label>
+<li><input type="checkbox" checked="checked" id="i6" /><label for="i6" class="attr">@<strong>xmlns</strong> <span class="n">[1]</span></label>
+<li><input type="checkbox" checked="checked" id="i7" /><label for="i7"><strong>facsimile</strong> <span class="n">[1]</span>  <span class="loc">/TEI/facsimile</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i8" /><label for="i8"><strong>graphic</strong> <span class="n">[2]</span>  <span class="attr">[@2]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/facsimile/graphic</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i9" /><label for="i9" class="attr">@<strong>xml:id</strong> <span class="n">[2]</span></label>
+<li><input type="checkbox" checked="checked" id="i10" /><label for="i10" class="attr">@<strong>url</strong> <span class="n">[2]</span></label>
+</ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i11" /><label for="i11"><strong>teiHeader</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i12" /><label for="i12"><strong>fileDesc</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i13" /><label for="i13"><strong>editionStmt</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/editionStmt</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i14" /><label for="i14"><strong>edition</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/editionStmt/edition</span></label>
+</li><li><input type="checkbox" checked="checked" id="i15" /><label for="i15"><strong>respStmt</strong> <span class="n">[2]</span>  <span class="loc">/TEI/teiHeader/fileDesc/editionStmt/respStmt</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i16" /><label for="i16"><strong>orgName</strong> <span class="n">[2]</span>  <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/editionStmt/respStmt/orgName</span></label>
+</li><li><input type="checkbox" checked="checked" id="i17" /><label for="i17"><strong>persName</strong> <span class="n">[3]</span>  <span class="tn">[T3]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/editionStmt/respStmt/persName</span></label>
+</li><li><input type="checkbox" checked="checked" id="i18" /><label for="i18"><strong>resp</strong> <span class="n">[2]</span>  <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/editionStmt/respStmt/resp</span></label>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i19" /><label for="i19"><strong>publicationStmt</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/publicationStmt</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i20" /><label for="i20"><strong>authority</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/publicationStmt/authority</span></label>
+</li><li><input type="checkbox" checked="checked" id="i21" /><label for="i21"><strong>availability</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/publicationStmt/availability</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i22" /><label for="i22"><strong>licence</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/publicationStmt/availability/licence</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i23" /><label for="i23" class="attr">@<strong>target</strong> <span class="n">[1]</span></label>
+</ul>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i24" /><label for="i24"><strong>sourceDesc</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i25" /><label for="i25"><strong>msDesc</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i26" /><label for="i26"><strong>additional</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/additional</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i27" /><label for="i27"><strong>listBibl</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/additional/listBibl</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i28" /><label for="i28"><strong>bibl</strong> <span class="n">[1]</span>  <span class="tn">[T2]</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/additional/listBibl/bibl</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i29" /><label for="i29"><strong>ref</strong> <span class="n">[2]</span>  <span class="attr">[@1]</span> <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/additional/listBibl/bibl/ref</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i30" /><label for="i30" class="attr">@<strong>target</strong> <span class="n">[2]</span></label>
+</ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i31" /><label for="i31"><strong>history</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/history</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i32" /><label for="i32"><strong>p</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/history/p</span></label>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i33" /><label for="i33"><strong>msContents</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/msContents</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i34" /><label for="i34"><strong>msItem</strong> <span class="n">[3]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/msContents/msItem</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i35" /><label for="i35"><strong>title</strong> <span class="n">[3]</span>  <span class="tn">[T3]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/msContents/msItem/title</span></label>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i36" /><label for="i36"><strong>msIdentifier</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i37" /><label for="i37"><strong>idno</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/idno</span></label>
+</li><li><input type="checkbox" checked="checked" id="i38" /><label for="i38"><strong>repository</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/repository</span></label>
+</li><li><input type="checkbox" checked="checked" id="i39" /><label for="i39"><strong>settlement</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/msIdentifier/settlement</span></label>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i40" /><label for="i40"><strong>physDesc</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i41" /><label for="i41"><strong>p</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/sourceDesc/msDesc/physDesc/p</span></label>
+</li></ul>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i42" /><label for="i42"><strong>titleStmt</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/fileDesc/titleStmt</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i43" /><label for="i43"><strong>author</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/titleStmt/author</span></label>
+</li><li><input type="checkbox" checked="checked" id="i44" /><label for="i44"><strong>title</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/fileDesc/titleStmt/title</span></label>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i45" /><label for="i45"><strong>profileDesc</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/profileDesc</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i46" /><label for="i46"><strong>particDesc</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/profileDesc/particDesc</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i47" /><label for="i47"><strong>listPerson</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/profileDesc/particDesc/listPerson</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i48" /><label for="i48"><strong>person</strong> <span class="n">[7]</span>  <span class="attr">[@1]</span> <span class="loc">/TEI/teiHeader/profileDesc/particDesc/listPerson/person</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i49" /><label for="i49" class="attr">@<strong>xml:id</strong> <span class="n">[6]</span></label>
+<li><input type="checkbox" checked="checked" id="i50" /><label for="i50"><strong>persName</strong> <span class="n">[7]</span>  <span class="attr">[@1]</span> <span class="tn">[T7]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/profileDesc/particDesc/listPerson/person/persName</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i51" /><label for="i51" class="attr">@<strong>xml:id</strong> <span class="n">[1]</span></label>
+</ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i52" /><label for="i52"><strong>settingDesc</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/profileDesc/settingDesc</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i53" /><label for="i53"><strong>listPlace</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/profileDesc/settingDesc/listPlace</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i54" /><label for="i54"><strong>place</strong> <span class="n">[6]</span>  <span class="attr">[@1]</span> <span class="loc">/TEI/teiHeader/profileDesc/settingDesc/listPlace/place</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i55" /><label for="i55" class="attr">@<strong>xml:id</strong> <span class="n">[6]</span></label>
+<li><input type="checkbox" checked="checked" id="i56" /><label for="i56"><strong>placeName</strong> <span class="n">[6]</span>  <span class="tn">[T6]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/profileDesc/settingDesc/listPlace/place/placeName</span></label>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i57" /><label for="i57"><strong>xenoData</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/xenoData</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i58" /><label for="i58"><strong>rdf:RDF</strong> <span class="n">[1]</span>  <span class="loc">/TEI/teiHeader/xenoData/rdf:RDF</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i59" /><label for="i59"><strong>dbo:Place</strong> <span class="n">[6]</span>  <span class="attr">[@2]</span> <span class="loc">/TEI/teiHeader/xenoData/rdf:RDF/dbo:Place</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i60" /><label for="i60" class="attr">@<strong>ref</strong> <span class="n">[6]</span></label>
+<li><input type="checkbox" checked="checked" id="i61" /><label for="i61" class="attr">@<strong>rdf:about</strong> <span class="n">[6]</span></label>
+<li><input type="checkbox" checked="checked" id="i62" /><label for="i62"><strong>rdfs:label</strong> <span class="n">[6]</span>  <span class="attr">[@1]</span> <span class="tn">[T6]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/xenoData/rdf:RDF/dbo:Place/rdfs:label</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i63" /><label for="i63" class="attr">@<strong>xml:lang</strong> <span class="n">[6]</span></label>
+</ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i64" /><label for="i64"><strong>foaf:Person</strong> <span class="n">[5]</span>  <span class="attr">[@2]</span> <span class="loc">/TEI/teiHeader/xenoData/rdf:RDF/foaf:Person</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i65" /><label for="i65" class="attr">@<strong>ref</strong> <span class="n">[5]</span></label>
+<li><input type="checkbox" checked="checked" id="i66" /><label for="i66" class="attr">@<strong>rdf:about</strong> <span class="n">[5]</span></label>
+<li><input type="checkbox" checked="checked" id="i67" /><label for="i67"><strong>rdfs:label</strong> <span class="n">[5]</span>  <span class="attr">[@1]</span> <span class="tn">[T5]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/teiHeader/xenoData/rdf:RDF/foaf:Person/rdfs:label</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i68" /><label for="i68" class="attr">@<strong>xml:lang</strong> <span class="n">[5]</span></label>
+</ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i69" /><label for="i69"><strong>text</strong> <span class="n">[1]</span>  <span class="loc">/TEI/text</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i70" /><label for="i70"><strong>body</strong> <span class="n">[1]</span>  <span class="loc">/TEI/text/body</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i71" /><label for="i71"><strong>div</strong> <span class="n">[7]</span>  <span class="attr">[@2]</span> <span class="loc">/TEI/text/body/div</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i72" /><label for="i72" class="attr">@<strong>n</strong> <span class="n">[6]</span></label>
+<li><input type="checkbox" checked="checked" id="i73" /><label for="i73" class="attr">@<strong>type</strong> <span class="n">[7]</span></label>
+<li><input type="checkbox" checked="checked" id="i74" /><label for="i74"><strong>cb</strong> <span class="n">[2]</span>  <span class="attr">[@1]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/cb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i75" /><label for="i75" class="attr">@<strong>n</strong> <span class="n">[2]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i76" /><label for="i76"><strong>head</strong> <span class="n">[7]</span>  <span class="attr">[@1]</span> <span class="tn">[T36]</span> <span class="loc">/TEI/text/body/div/head</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i77" /><label for="i77" class="attr">@<strong>rend</strong> <span class="n">[7]</span></label>
+<li><input type="checkbox" checked="checked" id="i78" /><label for="i78"><strong>cb</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/head/cb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i79" /><label for="i79" class="attr">@<strong>n</strong> <span class="n">[1]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i80" /><label for="i80"><strong>ex</strong> <span class="n">[2]</span>  <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/head/ex</span></label>
+</li><li><input type="checkbox" checked="checked" id="i81" /><label for="i81"><strong>hi</strong> <span class="n">[2]</span>  <span class="attr">[@1]</span> <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/head/hi</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i82" /><label for="i82" class="attr">@<strong>rend</strong> <span class="n">[2]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i83" /><label for="i83"><strong>lb</strong> <span class="n">[15]</span>  <span class="attr">[@2]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/head/lb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i84" /><label for="i84" class="attr">@<strong>break</strong> <span class="n">[3]</span></label>
+<li><input type="checkbox" checked="checked" id="i85" /><label for="i85" class="attr">@<strong>n</strong> <span class="n">[15]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i86" /><label for="i86"><strong>name</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/head/name</span></label>
+</li><li><input type="checkbox" checked="checked" id="i87" /><label for="i87"><strong>num</strong> <span class="n">[7]</span>  <span class="tn">[T7]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/head/num</span></label>
+</li><li><input type="checkbox" checked="checked" id="i88" /><label for="i88"><strong>pb</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/head/pb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i89" /><label for="i89" class="attr">@<strong>n</strong> <span class="n">[1]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i90" /><label for="i90"><strong>persName</strong> <span class="n">[2]</span>  <span class="attr">[@1]</span> <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/head/persName</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i91" /><label for="i91" class="attr">@<strong>ref</strong> <span class="n">[2]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i92" /><label for="i92"><strong>placeName</strong> <span class="n">[6]</span>  <span class="attr">[@1]</span> <span class="tn">[T6]</span> <span class="loc">/TEI/text/body/div/head/placeName</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i93" /><label for="i93" class="attr">@<strong>ref</strong> <span class="n">[2]</span></label>
+<li><input type="checkbox" checked="checked" id="i94" /><label for="i94"><strong>ex</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/head/placeName/ex</span></label>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i95" /><label for="i95"><strong>p</strong> <span class="n">[8]</span>  <span class="tn">[T173]</span> <span class="loc">/TEI/text/body/div/p</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i96" /><label for="i96"><strong>cb</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/p/cb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i97" /><label for="i97" class="attr">@<strong>n</strong> <span class="n">[1]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i98" /><label for="i98"><strong>date</strong> <span class="n">[2]</span>  <span class="attr">[@1]</span> <span class="tn">[T3]</span> <span class="loc">/TEI/text/body/div/p/date</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i99" /><label for="i99" class="attr">@<strong>when</strong> <span class="n">[2]</span></label>
+<li><input type="checkbox" checked="checked" id="i100" /><label for="i100"><strong>num</strong> <span class="n">[2]</span>  <span class="tn">[T5]</span> <span class="loc">/TEI/text/body/div/p/date/num</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i101" /><label for="i101"><strong>ex</strong> <span class="n">[2]</span>  <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/date/num/ex</span></label>
+</li><li><input type="checkbox" checked="checked" id="i102" /><label for="i102"><strong>hi</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/date/num/hi</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i103" /><label for="i103" class="attr">@<strong>rend</strong> <span class="n">[1]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i104" /><label for="i104"><strong>lb</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/p/date/num/lb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i105" /><label for="i105" class="attr">@<strong>n</strong> <span class="n">[1]</span></label>
+</ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i106" /><label for="i106"><strong>persName</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/date/persName</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i107" /><label for="i107" class="attr">@<strong>ref</strong> <span class="n">[1]</span></label>
+</ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i108" /><label for="i108"><strong>ex</strong> <span class="n">[38]</span>  <span class="tn">[T38]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/ex</span></label>
+</li><li><input type="checkbox" checked="checked" id="i109" /><label for="i109"><strong>hi</strong> <span class="n">[7]</span>  <span class="attr">[@1]</span> <span class="tn">[T7]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/hi</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i110" /><label for="i110" class="attr">@<strong>rend</strong> <span class="n">[7]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i111" /><label for="i111"><strong>lb</strong> <span class="n">[106]</span>  <span class="attr">[@2]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/p/lb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i112" /><label for="i112" class="attr">@<strong>break</strong> <span class="n">[24]</span></label>
+<li><input type="checkbox" checked="checked" id="i113" /><label for="i113" class="attr">@<strong>n</strong> <span class="n">[106]</span></label>
+</ul>
+</li><li><input type="checkbox" checked="checked" id="i114" /><label for="i114"><strong>name</strong> <span class="n">[2]</span>  <span class="tn">[T2]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/name</span></label>
+</li><li><input type="checkbox" checked="checked" id="i115" /><label for="i115"><strong>num</strong> <span class="n">[12]</span>  <span class="tn">[T12]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/num</span></label>
+</li><li><input type="checkbox" checked="checked" id="i116" /><label for="i116"><strong>persName</strong> <span class="n">[13]</span>  <span class="attr">[@1]</span> <span class="tn">[T14]</span> <span class="loc">/TEI/text/body/div/p/persName</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i117" /><label for="i117" class="attr">@<strong>ref</strong> <span class="n">[10]</span></label>
+<li><input type="checkbox" checked="checked" id="i118" /><label for="i118"><strong>ex</strong> <span class="n">[1]</span>  <span class="tn">[T1]</span> <span class="leaf">&#x25c0;</span> <span class="loc">/TEI/text/body/div/p/persName/ex</span></label>
+</li><li><input type="checkbox" checked="checked" id="i119" /><label for="i119"><strong>lb</strong> <span class="n">[1]</span>  <span class="attr">[@1]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/p/persName/lb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i120" /><label for="i120" class="attr">@<strong>n</strong> <span class="n">[1]</span></label>
+</ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i121" /><label for="i121"><strong>placeName</strong> <span class="n">[14]</span>  <span class="attr">[@1]</span> <span class="tn">[T16]</span> <span class="loc">/TEI/text/body/div/p/placeName</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i122" /><label for="i122" class="attr">@<strong>ref</strong> <span class="n">[10]</span></label>
+<li><input type="checkbox" checked="checked" id="i123" /><label for="i123"><strong>lb</strong> <span class="n">[2]</span>  <span class="attr">[@2]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/p/placeName/lb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i124" /><label for="i124" class="attr">@<strong>break</strong> <span class="n">[2]</span></label>
+<li><input type="checkbox" checked="checked" id="i125" /><label for="i125" class="attr">@<strong>n</strong> <span class="n">[2]</span></label>
+</ul>
+</li></ul>
+</li></ul>
+</li><li><input type="checkbox" checked="checked" id="i126" /><label for="i126"><strong>pb</strong> <span class="n">[2]</span>  <span class="attr">[@2]</span> <span class="empty">&#x25c1;</span> <span class="loc">/TEI/text/body/div/pb</span></label>
+<ul>
+<li><input type="checkbox" checked="checked" id="i127" /><label for="i127" class="attr">@<strong>facs</strong> <span class="n">[1]</span></label>
+<li><input type="checkbox" checked="checked" id="i128" /><label for="i128" class="attr">@<strong>n</strong> <span class="n">[2]</span></label>
+</ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+</li>
+        </ul>
+    </div>
+</body>
+</html>
