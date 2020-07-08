@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Li livres du Graunt Caam</title>
+                <author>Marco Polo</author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital edition. Training material of the Venice Virtual Summer Camp, July 6-10, 2020</edition>
+                <respStmt>
+                    <resp>Transcription</resp>
+                    <persName>Elisa Cugliana</persName>
+                    <persName>Silvia Marsili</persName>
+                    <orgName>Ca' Foscari University of Venice</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>Encoding</resp>
+                    <persName>YOUR NAME</persName>
+                    <orgName>YOUR INSTITUTION</orgName>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Venice Centre for Digital and Public Humanities (VeDPH)</authority>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+                        4.0</licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Oxford</settlement>
+                        <repository>Bodleian Library</repository>
+                        <idno>MS. Bodl. 264</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem><title>Romance of Alexander (ff. 3-208)</title></msItem>
+                        <msItem><title>Alexander and Dindimus (ff. 1, 209-215)</title></msItem>
+                        <msItem><title>Marco Polo, Li livres du Graunt Caam (ff. 2, 218-274)</title></msItem>
+                    </msContents>
+                    <physDesc>
+                        <p>Composite manuscript (part 1: fols. 3-208; part 2: fols. 1, 209-215 and fols. 2,
+                            218-274)</p>
+                    </physDesc>
+                    <history>
+                        <p>Part 1: 1338-1344, Flemish; part 2: c. 1400, English</p>
+                    </history>
+                    <additional>
+                        <listBibl>
+                            <bibl>A catalogue of Western manuscripts at the Bodleian Libraries and
+                                selected Oxford colleges, Summary Catalogue no. 2464, online: <ref
+                                    target="https://medieval.bodleian.ox.ac.uk/catalog/manuscript_1315"
+                                    >https://medieval.bodleian.ox.ac.uk/catalog/manuscript_1315</ref>;
+                                TEI-XML in the Bodleian github repository: <ref
+                                    target="https://github.com/bodleian/medieval-mss/blob/master/collections/Bodl/MS_Bodl_264.xml"
+                                    >https://github.com/bodleian/medieval-mss/blob/master/collections/Bodl/MS_Bodl_264.xml</ref></bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="Adam">
+                        <persName>Adam</persName>
+                    </person>
+                    <person xml:id="MP">
+                        <persName>Marc Pol</persName>
+                    </person>
+                    <person>
+                        <persName xml:id="NP">Nicolaus Pol</persName>
+                    </person>
+                    <person xml:id="Mafe">
+                        <persName>Mafe</persName>
+                    </person>
+                    <person xml:id="AbarcaCaam">
+                        <persName>Abarca Caam</persName>
+                    </person>
+                    <person xml:id="GrandChan">
+                        <persName>Grannt Caam</persName>
+                    </person>
+                    <person xml:id="Rasta">
+                        <persName>Rasta Pysan</persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+            <settingDesc>
+                <listPlace>
+                    <place xml:id="Armenia">
+                        <placeName>Grannt Ermenie</placeName>
+                    </place>
+                    <place xml:id="India">
+                        <placeName>Ynde</placeName>
+                    </place>
+                    <place xml:id="Venice">
+                        <placeName>Venice</placeName>
+                    </place>
+                    <place xml:id="Constantinopel">
+                        <placeName>Constentinoble</placeName>
+                    </place>
+                    <place xml:id="Persia">
+                        <placeName>Persse</placeName>
+                    </place>
+                    <place xml:id="Soldania">
+                        <placeName>Soladaye</placeName>
+                    </place>
+                </listPlace>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic xml:id="fol-218r"
+            url="https://digital.bodleian.ox.ac.uk/inquire/p/699adfb3-a5da-4b09-9759-41eee3713bc3"/>
+        <graphic xml:id="fol-218v"
+            url="https://digital.bodleian.ox.ac.uk/inquire/p/ccf86bd5-62ac-4634-8b5f-8474ad04cbbb"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="prologue">
+                <pb n="218r" facs="#fol-218r"/>
+                <head rend="rubricated">
+                    <lb n="1"/>Ci commence li liures du <persName>grannt Caam</persName> qui parole de la <placeName>grannt Ermenie</placeName>
+                    de <placeName>persse</placeName>. 
+                    <lb n="2"/>et des <name>tartars</name> et d<placeName>ynde</placeName>. Et des
+                    granz merueille qui p<ex>er</ex> le monde sont. </head>
+                <cb n="a"/>
+                <p>
+                    <lb n="3"/><hi rend="initial">P</hi>Our sauoir la pure verite des
+                    <lb n="4"/>diuerses regions du monde. Ci
+                    <lb n="5"/>prenez cest liure si trouuerez les
+                    <lb n="6"/>grandes nues merueilles qui so<ex>n</ex>t
+                    <lb n="7"/>escriptes en la <placeName ref="#Armenia">grant hermenie</placeName>
+                    <lb n="8"/>et de <placeName ref="#Persia">persse</placeName>. Et des <name>tartars</name>. <ex>et</ex> dynde
+                    <lb n="9"/>et de maintes autres prouinces. Si comme n<ex>ost</ex>re liures
+                    <lb n="10"/>uous contera tout par ordre des que me sires <persName ref="#MP">marc pol</persName>
+                    <lb n="11"/>saies et nobles citoie<ex>n</ex>s de <placeName ref="#Venice">uenice</placeName> raconte pour ce que il
+                    <lb n="12" break="no"/>les uit. mais auques il ya choses</p>
+                <p>
+                    <lb n="13"/><hi rend="initial">Q</hi>vil ne vit pas. Mais il entendi d'om
+                    <lb break="no" n="14"/>mes certains par uerite. Et pur ce
+                    <lb n="15"/>metrons nous  les choses veues pour
+                    <lb n="16"/>veues. Et l'ente<ex>n</ex>due pour entendue
+                    <lb n="17"/>a ce que u<ex>ost</ex>re liure soit urais et uerita                    
+                    <cb n="b"/>
+                    <lb break="no" n="1"/>bles sanz nule menconge. Et chascu<ex>n</ex>s qui ce liure orra
+                    <lb n="2"/>ou lira le doit croire. Pour ce que toutes sont choses ve
+                    <lb break="no" n="3"/>ritables. Car ie vous fais a sauoir que puis que n<ex>ost</ex>re
+                    <lb n="4"/>sire diex fist <persName ref="#Adam">adam</persName> le premier pere ne fu ou ques de
+                    <lb n="5"/>nul homme generacion qui tant seust ne chercast
+                    <lb n="6"/>des diuerses parties du monde co<ex>m</ex>me cestui mesire <persName ref="#MP">marc 
+                    <lb n="7"/>pol</persName> en soc et pour ce pensa que ce seroit granz maus se
+                    <lb n="8"/>ce ne fist metre en escrit ce que il auoit veux oy par ue
+                    <lb break="no" n="9"/>rite. A ce que l'autre gent que ne l'ont veu ne oy le sa
+                    <lb break="no" n="10"/>chent par cest liure. Et si vous di quil de noura a ce
+                    <lb n="11"/>sauoir. En ces diu<ex>er</ex>ses parties bien .<num>xxvj</num>. ans le quel
+                    <lb n="12"/>liure puis que demourant fu en la carsere de gene fist
+                    <lb n="13"/>retraire par ordre par mesire <persName ref="#Rasta">rasta pysa<ex>n</ex></persName>. Qui en cele
+                    <lb n="14"/>meismes prison estoit au temps que il couroit de
+                    <lb n="15"/><date when="1293"><persName ref="#Christ">crist</persName>. <num>Mil.CC. x iiij<hi rend="superscript">xx</hi> et xxiij</num> anz de l'incarnacion</date>.</p>
+            </div>
+            <div type="chapter" n="1">
+                <pb n="218v"/>                
+                <cb n="a"/>
+                <head rend="rubricated">
+                    <lb n="1"/>Ci dit le p<ex>re</ex>mier chapitre. Comment les .<num>ij</num>.
+                    <lb n="2"/>Freres se partirent de <placeName ref="#Constantinopel">constentinoble</placeName> pour
+                    <lb n="3"/>encherchier du monde.
+                </head>
+                <p>
+                    <lb n="4"/><hi rend="initial">I</hi>l fu voir au temps que baudiaus fu empe
+                    <lb n="5"/>reres de constentinoble. Ce fu a <date when="1250"><num>Mil. <ex>et</ex> CC. <ex>et</ex>
+                    <lb n="6"/>l</num>. ans de crist</date>. Mesires <persName ref="#NP">nicolaus pol</persName> qui peres me
+                    <lb break="no" n="7"/>sire <persName ref="#MP">marc</persName> estoit et mesire <persName>mafe</persName> qui freres <persName ref="#NP">nicolaus</persName>
+                    <lb n="8"/>estoit. Cil .<num>ij</num>. estoient en la cite de <placeName ref="#Constantinopel">constentin
+                    <lb break="no" n="9"/>oble</placeName> ale de <placeName ref="#Venice">uenise</placeName> auec leur marcheaudise noble
+                    <lb n="10"/><ex>et</ex> sage et pourueant estoient sainz faille ilorent con
+                    <lb break="no" n="11"/>seil entreulz <ex>et</ex> prestrerent d'aler au marinaiour pour
+                    <lb n="12"/>gaaignier. Il chatoient plusours ioiaus <ex>et</ex> se par
+                    <lb break="no" n="13"/>tirent de <placeName ref="#Constantinopel">constentinnoble</placeName> et alerent par mer en <placeName ref="#Soldania">so
+                    <lb n="14" break="no"/>ladaye</placeName>.</p>
+            </div>
+            <div type="chapter" n="2">
+                <head rend="rubricated">Ci dit le secont chapitre comment li
+                    <lb n="15"/>doi frere se de partirent de <placeName ref="#Soldania">soldaye</placeName>.</head>
+                <p>
+                    <lb n="16"/><hi rend="initial">Q</hi>vant il furent venu en <placeName ref="#Soldania">soladaye</placeName> si penserent
+                    <lb n="17"/>e lor sembla bon d’aler plus auant e si par
+                    <lb break="no" n="18"/>tirent de <placeName ref="#Soldania">soladaye</placeName> <ex>et</ex> se mistrent au chemin et che uau
+                    <lb break="no" n="19"/>chierent tant que il vindrent a vn seignour <name>tartar</name>
+                    <lb n="20"/>qui auoit non <persName ref="#AbarcaCaam">abarca. Caam</persName>. Qui estoit ausara et
+                    <lb n="21"/>abolgata. Cestui dit barcalor fist grant honnour
+                    <lb n="22"/>aus .<num>ij</num>. Freres et ot mult grant a le <placeName>grece</placeName> de lor venue
+                    <lb n="23"/>et il si douuerent tous les ioiaus que il auoient apor
+                    <lb break="no" n="24"/>tez. Et illes recut m<ex>ou</ex>lt uolentires <ex>et</ex> quant il furent de
+                    <lb break="no" n="25"/>moure auec le seignour .i. an. Si li plorent m<ex>ou</ex>lt et
+                    <lb n="26"/>il leur fist donner .<num>ij</num>. tans q<ex>ue</ex> ce ne valoit quil li auoi
+                    <lb n="27"/>ent donne. Si lourdi une guerre entre barca et a
+                    <lb n="28"/>lau le seignour des tartars deleuant et dirent grant
+                    <lb n="29"/>ost dune part <ex>et</ex> dautre. Mais en la fin fu des confis
+                    <lb n="30"/>barca le seignour des tartars de ponent. Et morire<ex>n</ex>t
+                    <lb n="31"/>m<ex>ou</ex>lt de gent dune part <ex>et</ex> dautre si que par la choiso<ex>n</ex>
+                    <lb n="32"/>de ceste guerre nus ne pooit aler par chemin qui
+                    <lb n="33"/>ne fust pris. Mais ce peril couroit par ce chemin
+                    <lb n="34"/>ou il estoient uenu. Si que auant pooit chascuns
+                    <lb n="35"/>cheuauchier seurement et retourner arriere des
+                    <lb n="36"/>que aus .<num>ij</num>. Freres sembla daler encoure auant puis
+                    <lb n="37"/>que il ne pooient retourner si se partirent de barca
+                    <lb n="38"/>et sen alerent en vne cite qui auoit anon ou cata
+                    <lb n="39"/>qui estoit la fin duregne le seignour de ponent
+                    <lb n="40"/>Et de oucata se partirent et passerent le grant
+                    <lb n="41"/>flun de <placeName>tongri</placeName>. <ex>et</ex> alerent par .<num>i</num>. desert que estoit
+                    <lb n="42"/>lonc .<num>xiiij</num>. iournees il ne trouuerent viles. Ne
+                    <lb n="43"/>chastiaus fors que seulement que tatars auec
+                    <lb n="44"/>leur tentes qui viuoient de leur bestes qui paisso
+                    <lb break="no" n="45"/>ient aus chaus. </p>
+            </div>
+            <div type="chapter" n="3">
+                <head rend="rubricated"><hi rend="blue">¶</hi> Ci dit le tiers chapitres <cb n="b"/>
+                    <lb n="1"/>comment les .<num>ij</num>. Freres passerent .<num>i</num>. desert
+                    <lb n="2"/>et vindrent a la cite de <placeName>boca<ex>m</ex></placeName></head>
+                <p>
+                    <lb n="2"/><hi rend="initial">Q</hi>uant il orent passe
+                    <lb n="3"/>cel desert si vindrent doone cite qui est appellee
+                    <lb n="4"/><placeName>bocara</placeName> mo<ex>u</ex>lt noble <ex>et</ex> grant la prouence aussi a non <persName>barac</persName>
+                    <lb n="5"/><ex>et</ex> estoit roys .<num>i</num>. qui auoit non barac. la cite estoit la
+                    <lb n="6"/>meellour de toute <placeName ref="#Persia">persie</placeName> <ex>et</ex> q<ex>ua</ex>nt il furent la venu si ne po
+                    <lb break="no" n="7"/>rent plus aler auant. Ne retourner arriere. Si que il
+                    <lb n="8"/>demourent en cele cite de <placeName>bocara </placeName>.<num>iij</num>. Anz. Endeme<ex>n</ex>tres q<ex>ue</ex>
+                    <lb n="9"/>il demourent en cele cite si vint messages delau le sei
+                    <lb n="10" break="no"/>gneur de leuant li quele aloient au <persName>grant seignour</persName>
+                    <lb n="11"/>de touz les tatars du monde. Et quant li message ui
+                    <lb break="no" n="12"/>rent ces .<num>ij</num>. Freres si orent grant merueille pour ce
+                    q<ex>ue</ex>
+                    <lb n="13"/>onques nauoient veu nul latin en celle contree si
+                    <lb n="14"/>distrent aus .<num>ij</num>. Freres seignours se vous nous voules
+                    <lb n="15"/>creoiree vous yaures grant pourfit et grant honnour
+                    <lb n="16"/>et il respondirent que il les orroient volentires de ce
+                    <lb break="no" n="17"/>si lor distrent li message. Li <persName ref="#GrandChan">granz. Caam</persName> ne uit on
+                    <lb n="18"/>ques nul latin. Et agrant desir deueoir eut aucun
+                    <lb n="19"/>Et pource se vous voulez venir alui sachez sanz faille
+                    <lb n="20"/>que il vous verra volentiers et vous fera grant hon
+                    <lb n="21"/>nour et grant bien et peirez venir seurement avec
+                    <lb n="22"/>nous sanz nul encombrement del nule male gent. </p>
+            </div>
+            <div type="chapter" n="4">
+                <head rend="rubricated">
+                    <lb n="23"/>Ci dit le quart chapitre Comment les .<num>ij</num>. fre
+                    <lb break="no" n="24"/>res truuent les messages pour aller au grannt
+                    <lb n="25"/>Caan</head>
+                <p>
+                    <lb n="25"/><hi rend="initial">Q</hi>uant li frere furent
+                    <lb n="26"/>appareillie pour aler auec les messages si se
+                    <lb n="27"/>mistrent ala voie auec les messages et cheuauchie
+                    <lb break="no" n="28"/>rent .<num>i</num>. an enterin par montaignes <ex>et</ex> par gauz a
+                    <lb break="no" n="29"/>uant que il fussent la venu ou estoit le seignour
+                    <lb n="26"/>En cheuauchant trouuerent m<ex>ou</ex>lt de granz merueil
+                    <lb break="no" n="30"/>les de diuersetez telchoses les queles nous ne con
+                    <lb break="no" n="31"/>terons pas ore pour ce que mesire marc qui toutes
+                    <lb n="32"/>ces choses vit aussi le vous conterai en cest liure en
+                    <lb n="33"/>auant tout apertement</p>
+            </div>
+            <div type="chapter" n="5">
+                <head rend="rubricated">Ci dit le .<num>v</num>. chapi
+                    <lb break="no" n="34"/>tre comment les .<num>ij</num>. freres vindrent
+                    <lb n="35"/>au <persName ref="#GrandChan">grannt caan</persName></head>
+                <p>
+                    <hi rend="initial">Q</hi>uant il furent
+                    <lb n="36"/>venu au<persName ref="#GrandChan"> grant caam</persName> illes recut agrant honnour
+                    <lb n="37"/>et leur fist m<ex>ou</ex>lt grant feste et m<ex>ou</ex>lt grant ioie de lor
+                    <lb n="38"/>venue. Et leur demanda de maitnes choses. Pre
+                    <lb break="no" n="39"/>mierement des emereres et comment il mainti
+                    <lb break="no" n="40"/>enuent lor seignourie et lor terre en iustice. Et
+                    <lb n="41"/>comment il vout en bataille et de tout leur afaire
+                    <lb n="42"/>et ap<ex>r</ex>es leur demanda des roys et des princes <ex>et</ex>
+                    <lb n="43"/>des autres barons.</p>
+            </div>
+            <div type="chapter" n="6">
+                <head rend="rubricated"><hi rend="blue">¶ </hi>Ci dit le .<num>vj</num>. Chapi
+                    <lb break="no" n="44"/>tre. comment le grannt caan leur demanda
+                <pb n="219r"/> encore du fait des crestiens e propremont de la
+                    <lb n="2"/>postoile de romme.</head>
+                <p>[...]</p>
+            </div>
+        </body>
+    </text>
+</TEI>
